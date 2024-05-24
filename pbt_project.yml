@@ -9,32 +9,24 @@ pipelines: {}
 datasets: {}
 templates: {}
 jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
 functions:
   author: null
   createdAt: '2023-04-12 15:34:56'
-  gems: {}
   udfs: {}
   udafs: {}
   expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
 subgraphs: {}
 sqlModels:
   .prophecy/metadata/sqlmodels/stg_orders:
     name: stg_orders
-    schema:
-      providerType: Databricks
-      fields:
-      - name: order_id
-        dataType:
-          type: Integer
-      - name: customer_id
-        dataType:
-          type: Integer
-      - name: order_date
-        dataType:
-          type: Date
-      - name: status
-        dataType:
-          type: String
+    schema: null
     description: null
     author: maciej@prophecy.io
     files:
@@ -44,24 +36,13 @@ sqlModels:
     sqlDependencies:
       models: []
       datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
     createdAt: '2023-04-12 15:35:01'
   .prophecy/metadata/sqlmodels/CustomerOrders:
     name: CustomerOrders
-    schema:
-      providerType: Databricks
-      fields:
-      - name: customer_id
-        dataType:
-          type: Integer
-      - name: first_name
-        dataType:
-          type: String
-      - name: last_name
-        dataType:
-          type: String
-      - name: revenue
-        dataType:
-          type: Double
+    schema: null
     description: null
     author: nathan@prophecy.io
     files:
@@ -70,39 +51,13 @@ sqlModels:
     sqlDependencies:
       models: []
       datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
     createdAt: '2023-08-02 18:29:07'
   .prophecy/metadata/sqlmodels/orders:
     name: orders
-    schema:
-      providerType: Databricks
-      fields:
-      - name: order_id
-        dataType:
-          type: Integer
-      - name: customer_id
-        dataType:
-          type: Integer
-      - name: order_date
-        dataType:
-          type: Date
-      - name: status
-        dataType:
-          type: String
-      - name: credit_card_amount
-        dataType:
-          type: Double
-      - name: coupon_amount
-        dataType:
-          type: Double
-      - name: bank_transfer_amount
-        dataType:
-          type: Double
-      - name: gift_card_amount
-        dataType:
-          type: Double
-      - name: amount
-        dataType:
-          type: Double
+    schema: null
     description: This table has basic information about orders, as well as some derived
       facts based on payments
     author: maciej@prophecy.io
@@ -113,33 +68,13 @@ sqlModels:
     sqlDependencies:
       models: []
       datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
     createdAt: '2023-04-12 15:35:01'
   .prophecy/metadata/sqlmodels/customers:
     name: customers
-    schema:
-      providerType: Databricks
-      fields:
-      - name: customer_id
-        dataType:
-          type: Integer
-      - name: first_name
-        dataType:
-          type: String
-      - name: last_name
-        dataType:
-          type: String
-      - name: first_order
-        dataType:
-          type: Date
-      - name: most_recent_order
-        dataType:
-          type: Date
-      - name: total_orders
-        dataType:
-          type: Bigint
-      - name: customer_lifetime_value
-        dataType:
-          type: Double
+    schema: null
     description: This table has basic information about a customer, as well as some
       derived facts based on a customer's orders
     author: maciej@prophecy.io
@@ -150,24 +85,13 @@ sqlModels:
     sqlDependencies:
       models: []
       datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
     createdAt: '2023-04-12 15:35:01'
   .prophecy/metadata/sqlmodels/stg_payments:
     name: stg_payments
-    schema:
-      providerType: Databricks
-      fields:
-      - name: payment_id
-        dataType:
-          type: Integer
-      - name: order_id
-        dataType:
-          type: Integer
-      - name: payment_method
-        dataType:
-          type: String
-      - name: amount
-        dataType:
-          type: Double
+    schema: null
     description: null
     author: maciej@prophecy.io
     files:
@@ -177,21 +101,13 @@ sqlModels:
     sqlDependencies:
       models: []
       datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
     createdAt: '2023-04-12 15:35:01'
   .prophecy/metadata/sqlmodels/stg_customers:
     name: stg_customers
-    schema:
-      providerType: Databricks
-      fields:
-      - name: customer_id
-        dataType:
-          type: Integer
-      - name: first_name
-        dataType:
-          type: String
-      - name: last_name
-        dataType:
-          type: String
+    schema: null
     description: null
     author: maciej@prophecy.io
     files:
@@ -201,7 +117,12 @@ sqlModels:
     sqlDependencies:
       models: []
       datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
     createdAt: '2023-04-12 15:35:01'
+sqlSnapshots: {}
+sqlTests: {}
 sqlMacros: {}
 sqlSeeds:
   .prophecy/metadata/sqlseeds/raw_customers:
@@ -276,4 +197,6 @@ sqlPipeline:
   createdAt: '2022-12-09 05:43:56'
 dependencies: '[]'
 projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
 pipelineConfigurations: {}
