@@ -11,18 +11,19 @@
       "userDefinedConfig" : {
         "vars" : { }
       }
-    }
+    },
+    "version" : 3
   },
   "processes" : {
-    "source##VxMIf8UY" : {
-      "id" : "source##VxMIf8UY",
+    "source##drgfw0UU" : {
+      "id" : "source##drgfw0UU",
       "component" : "Seed",
       "metadata" : {
         "label" : "source",
-        "x" : 120,
-        "y" : 120,
+        "x" : 20,
+        "y" : 20,
         "phase" : 0,
-        "comment" : "-\n    Normally we would select from the table here, but we are using seeds to load\n    our data in this project\n    "
+        "comment" : "-\n  Normally we would select from the table here, but we are using seeds to load\n  our data in this project\n  "
       },
       "properties" : {
         "table" : {
@@ -33,7 +34,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "H3CHWbml",
+          "id" : "T4gocFOk",
           "schema" : {
             "providerType" : "Databricks",
             "fields" : [ {
@@ -60,21 +61,22 @@
           },
           "slug" : "out"
         } ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
       }
     },
-    "renamed##j3c1ViVR" : {
-      "id" : "renamed##j3c1ViVR",
+    "renamed##v3RrNGtp" : {
+      "id" : "renamed##v3RrNGtp",
       "component" : "Reformat",
       "metadata" : {
         "label" : "renamed",
-        "x" : 320,
-        "y" : 120,
+        "x" : 220,
+        "y" : 20,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
       "properties" : {
-        "columnsSelector" : [ "KPqq9NOM##id", "KPqq9NOM##order_id", "KPqq9NOM##payment_method" ],
+        "columnsSelector" : [ "fFbZ0ZJG##id", "fFbZ0ZJG##order_id", "fFbZ0ZJG##payment_method", "fFbZ0ZJG##amount" ],
         "expressions" : [ {
           "expression" : {
             "expression" : "id"
@@ -97,7 +99,7 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "KPqq9NOM",
+          "id" : "fFbZ0ZJG",
           "schema" : {
             "providerType" : "Databricks",
             "fields" : [ {
@@ -125,7 +127,7 @@
           "slug" : "source"
         } ],
         "outputs" : [ {
-          "id" : "JJn4ajlb",
+          "id" : "dTlrWfHL",
           "schema" : {
             "providerType" : "Databricks",
             "fields" : [ {
@@ -152,16 +154,17 @@
           },
           "slug" : "out"
         } ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
       }
     },
-    "stg_payments##PMerBwCO" : {
-      "id" : "stg_payments##PMerBwCO",
+    "stg_payments##p0mNi5Ii" : {
+      "id" : "stg_payments##p0mNi5Ii",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "stg_payments",
-        "x" : 520,
-        "y" : 120,
+        "x" : 420,
+        "y" : 20,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -177,7 +180,7 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "QFoHKIHO",
+          "id" : "v2pr2hGK",
           "schema" : {
             "providerType" : "Databricks",
             "fields" : [ {
@@ -205,7 +208,7 @@
           "slug" : "renamed"
         } ],
         "outputs" : [ {
-          "id" : "chtHMDum",
+          "id" : "KXfgCuSv",
           "schema" : {
             "providerType" : "Databricks",
             "fields" : [ {
@@ -232,22 +235,23 @@
           },
           "slug" : "out"
         } ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
       }
     }
   },
   "connections" : [ {
-    "id" : "pyg1teRL",
-    "source" : "source##VxMIf8UY",
-    "sourcePort" : "H3CHWbml",
-    "target" : "renamed##j3c1ViVR",
-    "targetPort" : "KPqq9NOM"
+    "id" : "m15qnV2q",
+    "source" : "source##drgfw0UU",
+    "sourcePort" : "T4gocFOk",
+    "target" : "renamed##v3RrNGtp",
+    "targetPort" : "fFbZ0ZJG"
   }, {
-    "id" : "Wt6uHrWy",
-    "source" : "renamed##j3c1ViVR",
-    "sourcePort" : "JJn4ajlb",
-    "target" : "stg_payments##PMerBwCO",
-    "targetPort" : "QFoHKIHO"
+    "id" : "KHjytNOL",
+    "source" : "renamed##v3RrNGtp",
+    "sourcePort" : "dTlrWfHL",
+    "target" : "stg_payments##p0mNi5Ii",
+    "targetPort" : "v2pr2hGK"
   } ],
   "component" : "Model"
 }

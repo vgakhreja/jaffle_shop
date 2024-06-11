@@ -11,11 +11,12 @@
       "userDefinedConfig" : {
         "vars" : { }
       }
-    }
+    },
+    "version" : 3
   },
   "processes" : {
-    "source##h8aWlF4M" : {
-      "id" : "source##h8aWlF4M",
+    "source##dIa3zwXl" : {
+      "id" : "source##dIa3zwXl",
       "component" : "Seed",
       "metadata" : {
         "label" : "source",
@@ -31,7 +32,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "Abj9b1Az",
+          "id" : "JYVf0R4b",
           "schema" : {
             "providerType" : "Databricks",
             "fields" : [ {
@@ -58,11 +59,12 @@
           },
           "slug" : "out"
         } ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
       }
     },
-    "renamed##P1cMSKwU" : {
-      "id" : "renamed##P1cMSKwU",
+    "renamed##Ef4D5PnX" : {
+      "id" : "renamed##Ef4D5PnX",
       "component" : "Reformat",
       "metadata" : {
         "label" : "renamed",
@@ -70,7 +72,7 @@
         "macroDependencies" : [ ]
       },
       "properties" : {
-        "columnsSelector" : [ "XCch4FYH##id", "XCch4FYH##user_id", "XCch4FYH##order_date", "XCch4FYH##status" ],
+        "columnsSelector" : [ "ykUKres6##id", "ykUKres6##user_id", "ykUKres6##order_date", "ykUKres6##status" ],
         "expressions" : [ {
           "expression" : {
             "expression" : "id"
@@ -93,7 +95,7 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "XCch4FYH",
+          "id" : "ykUKres6",
           "schema" : {
             "providerType" : "Databricks",
             "fields" : [ {
@@ -121,7 +123,7 @@
           "slug" : "source"
         } ],
         "outputs" : [ {
-          "id" : "J3jLWm3v",
+          "id" : "nCNVdoxY",
           "schema" : {
             "providerType" : "Databricks",
             "fields" : [ {
@@ -148,11 +150,12 @@
           },
           "slug" : "out"
         } ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
       }
     },
-    "stg_orders##zkDy5rYj" : {
-      "id" : "stg_orders##zkDy5rYj",
+    "stg_orders##SY6mFUbn" : {
+      "id" : "stg_orders##SY6mFUbn",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "stg_orders",
@@ -171,7 +174,7 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "XRJg3GT5",
+          "id" : "NbY2g0PY",
           "schema" : {
             "providerType" : "Databricks",
             "fields" : [ {
@@ -199,7 +202,7 @@
           "slug" : "renamed"
         } ],
         "outputs" : [ {
-          "id" : "We3TTUev",
+          "id" : "vrJVBMwr",
           "schema" : {
             "providerType" : "Databricks",
             "fields" : [ {
@@ -226,22 +229,23 @@
           },
           "slug" : "out"
         } ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
       }
     }
   },
   "connections" : [ {
-    "id" : "HH9Qtnyo",
-    "source" : "source##h8aWlF4M",
-    "sourcePort" : "Abj9b1Az",
-    "target" : "renamed##P1cMSKwU",
-    "targetPort" : "XCch4FYH"
+    "id" : "iBFa3mgJ",
+    "source" : "source##dIa3zwXl",
+    "sourcePort" : "JYVf0R4b",
+    "target" : "renamed##Ef4D5PnX",
+    "targetPort" : "ykUKres6"
   }, {
-    "id" : "GGIAH0Bu",
-    "source" : "renamed##P1cMSKwU",
-    "sourcePort" : "J3jLWm3v",
-    "target" : "stg_orders##zkDy5rYj",
-    "targetPort" : "XRJg3GT5"
+    "id" : "tvq3XXnh",
+    "source" : "renamed##Ef4D5PnX",
+    "sourcePort" : "nCNVdoxY",
+    "target" : "stg_orders##SY6mFUbn",
+    "targetPort" : "NbY2g0PY"
   } ],
   "component" : "Model"
 }

@@ -8,7 +8,32 @@ buildSystemDetails: null
 pipelines: {}
 datasets: {}
 templates: {}
-jobs: {}
+jobs:
+  jobs/new_job:
+    name: new_job
+    description: ''
+    fabricUID: 30
+    scheduler:
+      Prophecy: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines:
+    - pipelines/test
+    jobClusterMode:
+      clusterMode:
+        Multi: {}
+      clusterId: null
+    enabled: false
+    createdAt: '2024-05-26 14:55:10'
+    author: vaibhav+1@prophecy.io
+    models: []
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
@@ -26,7 +51,21 @@ subgraphs: {}
 sqlModels:
   .prophecy/metadata/sqlmodels/stg_orders:
     name: stg_orders
-    schema: null
+    schema:
+      providerType: Databricks
+      fields:
+      - name: order_id
+        dataType:
+          type: Integer
+      - name: customer_id
+        dataType:
+          type: Integer
+      - name: order_date
+        dataType:
+          type: Date
+      - name: status
+        dataType:
+          type: String
     description: null
     author: maciej@prophecy.io
     files:
@@ -42,7 +81,21 @@ sqlModels:
     createdAt: '2023-04-12 15:35:01'
   .prophecy/metadata/sqlmodels/CustomerOrders:
     name: CustomerOrders
-    schema: null
+    schema:
+      providerType: Databricks
+      fields:
+      - name: customer_id
+        dataType:
+          type: Integer
+      - name: first_name
+        dataType:
+          type: String
+      - name: last_name
+        dataType:
+          type: String
+      - name: revenue
+        dataType:
+          type: Double
     description: null
     author: nathan@prophecy.io
     files:
@@ -57,7 +110,36 @@ sqlModels:
     createdAt: '2023-08-02 18:29:07'
   .prophecy/metadata/sqlmodels/orders:
     name: orders
-    schema: null
+    schema:
+      providerType: Databricks
+      fields:
+      - name: order_id
+        dataType:
+          type: Integer
+      - name: customer_id
+        dataType:
+          type: Integer
+      - name: order_date
+        dataType:
+          type: Date
+      - name: status
+        dataType:
+          type: String
+      - name: credit_card_amount
+        dataType:
+          type: Double
+      - name: coupon_amount
+        dataType:
+          type: Double
+      - name: bank_transfer_amount
+        dataType:
+          type: Double
+      - name: gift_card_amount
+        dataType:
+          type: Double
+      - name: amount
+        dataType:
+          type: Double
     description: This table has basic information about orders, as well as some derived
       facts based on payments
     author: maciej@prophecy.io
@@ -74,7 +156,30 @@ sqlModels:
     createdAt: '2023-04-12 15:35:01'
   .prophecy/metadata/sqlmodels/customers:
     name: customers
-    schema: null
+    schema:
+      providerType: Databricks
+      fields:
+      - name: customer_id
+        dataType:
+          type: Integer
+      - name: first_name
+        dataType:
+          type: String
+      - name: last_name
+        dataType:
+          type: String
+      - name: first_order
+        dataType:
+          type: Date
+      - name: most_recent_order
+        dataType:
+          type: Date
+      - name: total_orders
+        dataType:
+          type: Bigint
+      - name: customer_lifetime_value
+        dataType:
+          type: Double
     description: This table has basic information about a customer, as well as some
       derived facts based on a customer's orders
     author: maciej@prophecy.io
@@ -91,7 +196,21 @@ sqlModels:
     createdAt: '2023-04-12 15:35:01'
   .prophecy/metadata/sqlmodels/stg_payments:
     name: stg_payments
-    schema: null
+    schema:
+      providerType: Databricks
+      fields:
+      - name: payment_id
+        dataType:
+          type: Integer
+      - name: order_id
+        dataType:
+          type: Integer
+      - name: payment_method
+        dataType:
+          type: String
+      - name: amount
+        dataType:
+          type: Double
     description: null
     author: maciej@prophecy.io
     files:
@@ -107,7 +226,18 @@ sqlModels:
     createdAt: '2023-04-12 15:35:01'
   .prophecy/metadata/sqlmodels/stg_customers:
     name: stg_customers
-    schema: null
+    schema:
+      providerType: Databricks
+      fields:
+      - name: customer_id
+        dataType:
+          type: Integer
+      - name: first_name
+        dataType:
+          type: String
+      - name: last_name
+        dataType:
+          type: String
     description: null
     author: maciej@prophecy.io
     files:

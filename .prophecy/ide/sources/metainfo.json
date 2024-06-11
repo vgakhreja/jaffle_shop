@@ -8,7 +8,7 @@
     "editable" : true
   },
   "providerType" : "databricks",
-  "fabricId" : "2623",
+  "fabricId" : "28",
   "prophecyIDEFolder" : {
     "name" : "",
     "children" : { },
@@ -96,5 +96,30 @@
     "dependencies" : { },
     "prophecyProjectDependencies" : { }
   },
+  "entitiesToSync" : [ {
+    "name" : "CustomerOrders",
+    "type" : "Model",
+    "syncedOnce" : false
+  }, {
+    "name" : "customers",
+    "type" : "Model",
+    "syncedOnce" : true
+  }, {
+    "name" : "orders",
+    "type" : "Model",
+    "syncedOnce" : true
+  }, {
+    "name" : "stg_customers",
+    "type" : "Model",
+    "syncedOnce" : true
+  }, {
+    "name" : "stg_orders",
+    "type" : "Model",
+    "syncedOnce" : true
+  }, {
+    "name" : "stg_payments",
+    "type" : "Model",
+    "syncedOnce" : true
+  } ],
   "frontEndLanguage" : "sql"
 }
