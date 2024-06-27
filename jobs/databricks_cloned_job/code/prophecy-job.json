@@ -2,15 +2,10 @@
   "metainfo" : {
     "type" : "Databricks",
     "fabricId" : "28",
-    "jobId" : "jobs/databricks_job",
-    "name" : "databricks_job",
+    "jobId" : "jobs/databricks_cloned_job",
+    "name" : "databricks_cloned_job",
     "schedule" : "None",
-    "scheduleTimeZone" : "UTC",
-    "jobClusterMode" : {
-      "clusterMode" : "Single"
-    },
     "enabled" : false,
-    "defaultClusterSize" : "prophecy_internal_jobs",
     "alerting" : {
       "emails" : "",
       "onStart" : false,
@@ -19,23 +14,27 @@
     },
     "maxConcurrentRuns" : 1,
     "processDefaultSettings" : {
-      "type" : "Inherited",
-      "retries" : 0,
-      "alerting" : {
-        "emails" : "",
-        "onStart" : false,
-        "onSuccess" : false,
-        "onFailure" : false
-      }
+      "retries" : 0
     },
     "availableFabrics" : [ {
-      "id" : "28",
-      "name" : "db_fab_1",
-      "clusterSizes" : {
-        "default" : "prophecy_internal_jobs",
-        "availableClusterSizes" : [ "prophecy_internal_jobs" ]
-      }
-    } ]
+      "id" : "29",
+      "name" : "airflow_fab",
+      "trialStartDate" : 1716551619909
+    }, {
+      "id" : "30",
+      "name" : "airflow_composer"
+    }, {
+      "id" : "36",
+      "name" : "airflow_253"
+    } ],
+    "scheduleTimeZone" : "UTC",
+    "airflowFunctions" : [ ],
+    "dynamicPipelineStatus" : {
+      "databricks" : false,
+      "dataproc" : false,
+      "emr" : false,
+      "onprem" : false
+    }
   },
   "processes" : {
     "NpGkvZkzJqfEEv9yIWXsP$$z8R_vARw_YMBPk3zvkCLf" : {
@@ -57,18 +56,12 @@
           "slug" : ""
         } ]
       },
-      "settings" : {
-        "type" : "Inherited",
-        "alerting" : {
-          "emails" : "",
-          "onStart" : false,
-          "onSuccess" : false,
-          "onFailure" : false
-        }
-      },
+      "settings" : { },
       "properties" : {
         "code" : "def m():\n    return \"abc\""
-      }
+      },
+      "connections" : [ ],
+      "processes" : { }
     }
   },
   "connections" : [ ]
