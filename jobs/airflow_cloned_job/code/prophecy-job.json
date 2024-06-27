@@ -6,7 +6,7 @@
     "name" : "airflow_cloned_job",
     "dagName" : "vaibhavgk3s_vaibhav_1_jafjaf_new_job",
     "schedule" : "None",
-    "enabled" : false,
+    "enabled" : true,
     "alerting" : {
       "emails" : "",
       "onStart" : false,

@@ -30,7 +30,7 @@ jobs:
       clusterMode:
         Multi: {}
       clusterId: null
-    enabled: false
+    enabled: true
     createdAt: '2024-05-26 14:55:10'
     author: vaibhav+1@prophecy.io
     models: []
@@ -42,7 +42,7 @@ jobs:
     scheduler:
       Databricks: {}
     cloudProvider: null
-    jobSize: null
+    jobSize: prophecy_internal_jobs
     scheduleCron: None
     timeout: null
     alerting:
@@ -55,7 +55,7 @@ jobs:
       clusterMode:
         Single: {}
       clusterId: null
-    enabled: null
+    enabled: true
     createdAt: '2024-06-19 12:20:20'
     author: vaibhav+1@prophecy.io
     models: []
@@ -68,7 +68,7 @@ jobs:
       Composer: {}
     cloudProvider: null
     jobSize: null
-    scheduleCron: null
+    scheduleCron: None
     timeout: null
     alerting:
       emails: ''
@@ -78,9 +78,9 @@ jobs:
     pipelines: []
     jobClusterMode:
       clusterMode:
-        Single: {}
+        Multi: {}
       clusterId: null
-    enabled: null
+    enabled: true
     createdAt: '2024-06-27 00:43:35'
     author: vaibhav+1@prophecy.io
     models: []
@@ -92,8 +92,8 @@ jobs:
     scheduler:
       Databricks: {}
     cloudProvider: null
-    jobSize: null
-    scheduleCron: null
+    jobSize: prophecy_internal_jobs
+    scheduleCron: None
     timeout: null
     alerting:
       emails: ''
@@ -105,7 +105,7 @@ jobs:
       clusterMode:
         Single: {}
       clusterId: null
-    enabled: null
+    enabled: true
     createdAt: '2024-06-27 01:45:07'
     author: vaibhav+1@prophecy.io
     models: []

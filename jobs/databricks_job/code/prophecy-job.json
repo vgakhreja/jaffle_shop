@@ -9,7 +9,7 @@
     "jobClusterMode" : {
       "clusterMode" : "Single"
     },
-    "enabled" : false,
+    "enabled" : true,
     "defaultClusterSize" : "prophecy_internal_jobs",
     "alerting" : {
       "emails" : "",
