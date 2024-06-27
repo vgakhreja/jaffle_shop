@@ -85,6 +85,31 @@ jobs:
     author: vaibhav+1@prophecy.io
     models: []
     cloned: null
+  jobs/airflow_clone:
+    name: airflow_clone
+    description: ''
+    fabricUID: 36
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: null
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-06-27 10:33:25'
+    author: vaibhav+1@prophecy.io
+    models: []
+    cloned: true
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''

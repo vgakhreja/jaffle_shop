@@ -1,0 +1,86 @@
+{
+  "metainfo" : {
+    "type" : "Prophecy",
+    "fabricId" : "36",
+    "jobId" : "jobs/airflow_clone",
+    "name" : "airflow_clone",
+    "dagName" : "vaibhavgk3s_vaibhav_1_jafjaf_airflow_clone",
+    "schedule" : "None",
+    "enabled" : true,
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "ignore_first_depends_on_past" : true,
+      "do_xcom_push" : true
+    },
+    "availableFabrics" : [ {
+      "id" : "29",
+      "name" : "airflow_fab",
+      "trialStartDate" : 1716551619909
+    }, {
+      "id" : "30",
+      "name" : "airflow_composer"
+    }, {
+      "id" : "36",
+      "name" : "airflow_253"
+    } ],
+    "maxActiveRuns" : 1,
+    "catchup" : false,
+    "tags" : [ ],
+    "scheduleTimeZone" : "UTC",
+    "dagParams" : {
+      "instances" : {
+        "default" : { }
+      },
+      "params" : { },
+      "selected" : "default"
+    },
+    "airflowFunctions" : [ ],
+    "dynamicPipelineStatus" : {
+      "databricks" : false,
+      "dataproc" : false,
+      "emr" : false,
+      "onprem" : false
+    }
+  },
+  "processes" : {
+    "-t3Lyx4kYftQyi08dKwLq$$I1YUDoVqanooxvj9JNIHf" : {
+      "id" : "-t3Lyx4kYftQyi08dKwLq$$I1YUDoVqanooxvj9JNIHf",
+      "component" : "Python",
+      "metadata" : {
+        "label" : "Python_0",
+        "slug" : "Python_0",
+        "x" : -1800,
+        "y" : -880
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Prw3oR9qtjA7jCq8F5F_3$$5nyxYRekwHJ4-2auqlpuc",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "vKmFTQyuOpz0xeUWMgk95$$DnbiYkCtiw_mAUciPwVx1",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "templatesExts" : null,
+        "code" : "def m():\n    return \"ab3vvvc\"",
+        "valueInLogs" : true,
+        "opArgs" : null,
+        "templatesDict" : null,
+        "taskId" : null,
+        "opKwargs" : null
+      },
+      "connections" : [ ],
+      "processes" : { }
+    }
+  },
+  "connections" : [ ]
+}
