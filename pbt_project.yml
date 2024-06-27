@@ -80,7 +80,7 @@ jobs:
       clusterMode:
         Multi: {}
       clusterId: null
-    enabled: true
+    enabled: false
     createdAt: '2024-06-27 00:43:35'
     author: vaibhav+1@prophecy.io
     models: []
