@@ -1,0 +1,75 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "28",
+    "jobId" : "jobs/databricks_job",
+    "name" : "databricks_job",
+    "schedule" : "None",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "prophecy_internal_jobs",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "type" : "Inherited",
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      }
+    },
+    "availableFabrics" : [ {
+      "id" : "28",
+      "name" : "db_fab_1",
+      "clusterSizes" : {
+        "default" : "prophecy_internal_jobs",
+        "availableClusterSizes" : [ "prophecy_internal_jobs" ]
+      }
+    } ]
+  },
+  "processes" : {
+    "NpGkvZkzJqfEEv9yIWXsP$$z8R_vARw_YMBPk3zvkCLf" : {
+      "id" : "NpGkvZkzJqfEEv9yIWXsP$$z8R_vARw_YMBPk3zvkCLf",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_0",
+        "slug" : "Script_0",
+        "x" : -1200,
+        "y" : -740
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "L8cg0wkLTCk_xLT9Tj052$$N14Y-R2TEe9OeYbexce1b",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "8lx87rg6CysJRZumdHEcT$$oH0UFfsWteoB84xPaWJKg",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "code" : "def m():\n    return \"abc\""
+      }
+    }
+  },
+  "connections" : [ ]
+}

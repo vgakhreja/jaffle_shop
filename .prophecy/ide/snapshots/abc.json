@@ -1,0 +1,51 @@
+{
+  "id" : "abc",
+  "metainfo" : {
+    "label" : "abc",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "strategy" : "'timestamp'",
+        "target_schema" : "",
+        "unique_key" : "",
+        "type" : "SnapshotConfig"
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "abc##sSWSOGPk" : {
+      "id" : "abc##sSWSOGPk",
+      "component" : "TargetSnapshot",
+      "metadata" : {
+        "label" : "abc",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0
+      },
+      "properties" : {
+        "query" : "",
+        "customQuery" : false,
+        "customQueryDisabled" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "UqpU7w2W",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "ChAQfRhz",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Snapshot"
+}

@@ -12,7 +12,7 @@ jobs:
   jobs/new_job:
     name: new_job
     description: ''
-    fabricUID: 30
+    fabricUID: 36
     scheduler:
       Prophecy: {}
     cloudProvider: null
@@ -34,6 +34,82 @@ jobs:
     createdAt: '2024-05-26 14:55:10'
     author: vaibhav+1@prophecy.io
     models: []
+    cloned: null
+  jobs/databricks_job:
+    name: databricks_job
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-06-19 12:20:20'
+    author: vaibhav+1@prophecy.io
+    models: []
+    cloned: null
+  jobs/airflow_cloned_job:
+    name: airflow_cloned_job
+    description: ''
+    fabricUID: 36
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: null
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-06-27 00:43:35'
+    author: vaibhav+1@prophecy.io
+    models: []
+    cloned: true
+  jobs/databricks_cloned_job:
+    name: databricks_cloned_job
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: null
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-06-27 00:44:45'
+    author: vaibhav+1@prophecy.io
+    models: []
+    cloned: true
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
@@ -251,7 +327,22 @@ sqlModels:
       sources: []
       snapshots: []
     createdAt: '2023-04-12 15:35:01'
-sqlSnapshots: {}
+sqlSnapshots:
+  .prophecy/metadata/sqlsnapshots/abc:
+    name: abc
+    schema: null
+    description: null
+    author: vaibhav+1@prophecy.io
+    files:
+    - snapshots/abc.sql
+    - .prophecy/ide/snapshots/abc.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-06-19 15:10:13'
 sqlTests: {}
 sqlMacros: {}
 sqlSeeds:
