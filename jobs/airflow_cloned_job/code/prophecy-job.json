@@ -2,8 +2,8 @@
   "metainfo" : {
     "type" : "Prophecy",
     "fabricId" : "36",
-    "jobId" : "jobs/new_job",
-    "name" : "new_job",
+    "jobId" : "jobs/airflow_cloned_job",
+    "name" : "airflow_cloned_job",
     "dagName" : "vaibhavgk3s_vaibhav_1_jafjaf_new_job",
     "schedule" : "None",
     "enabled" : false,
@@ -71,7 +71,7 @@
       "settings" : { },
       "properties" : {
         "templatesExts" : null,
-        "code" : "def m():\n    return \"abc\"",
+        "code" : "def m():\n    return \"abcvv3bniun\"",
         "valueInLogs" : true,
         "opArgs" : null,
         "templatesDict" : null,

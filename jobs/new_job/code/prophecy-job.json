@@ -71,7 +71,7 @@
       "settings" : { },
       "properties" : {
         "templatesExts" : null,
-        "code" : "def m():\n    return \"abc\"",
+        "code" : "def m():\n    return \"ab3vvvc\"",
         "valueInLogs" : true,
         "opArgs" : null,
         "templatesDict" : null,

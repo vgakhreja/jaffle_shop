@@ -90,7 +90,7 @@ jobs:
     description: ''
     fabricUID: 28
     scheduler:
-      Composer: {}
+      Databricks: {}
     cloudProvider: null
     jobSize: null
     scheduleCron: null
@@ -106,10 +106,10 @@ jobs:
         Single: {}
       clusterId: null
     enabled: null
-    createdAt: '2024-06-27 00:44:45'
+    createdAt: '2024-06-27 01:45:07'
     author: vaibhav+1@prophecy.io
     models: []
-    cloned: null
+    cloned: true
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''

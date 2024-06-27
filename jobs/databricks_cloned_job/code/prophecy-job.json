@@ -5,7 +5,12 @@
     "jobId" : "jobs/databricks_cloned_job",
     "name" : "databricks_cloned_job",
     "schedule" : "None",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
     "enabled" : false,
+    "defaultClusterSize" : "prophecy_internal_jobs",
     "alerting" : {
       "emails" : "",
       "onStart" : false,
@@ -14,27 +19,23 @@
     },
     "maxConcurrentRuns" : 1,
     "processDefaultSettings" : {
-      "retries" : 0
+      "type" : "Inherited",
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      }
     },
     "availableFabrics" : [ {
-      "id" : "29",
-      "name" : "airflow_fab",
-      "trialStartDate" : 1716551619909
-    }, {
-      "id" : "30",
-      "name" : "airflow_composer"
-    }, {
-      "id" : "36",
-      "name" : "airflow_253"
-    } ],
-    "scheduleTimeZone" : "UTC",
-    "airflowFunctions" : [ ],
-    "dynamicPipelineStatus" : {
-      "databricks" : false,
-      "dataproc" : false,
-      "emr" : false,
-      "onprem" : false
-    }
+      "id" : "28",
+      "name" : "db_fab_1",
+      "clusterSizes" : {
+        "default" : "prophecy_internal_jobs",
+        "availableClusterSizes" : [ "prophecy_internal_jobs" ]
+      }
+    } ]
   },
   "processes" : {
     "NpGkvZkzJqfEEv9yIWXsP$$z8R_vARw_YMBPk3zvkCLf" : {
@@ -56,12 +57,18 @@
           "slug" : ""
         } ]
       },
-      "settings" : { },
-      "properties" : {
-        "code" : "def m():\n    return \"abc\""
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
       },
-      "connections" : [ ],
-      "processes" : { }
+      "properties" : {
+        "code" : "def m():\n    return \"abcibiv3v\""
+      }
     }
   },
   "connections" : [ ]
