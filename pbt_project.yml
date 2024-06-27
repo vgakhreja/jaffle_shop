@@ -60,31 +60,6 @@ jobs:
     author: vaibhav+1@prophecy.io
     models: []
     cloned: null
-  jobs/airflow_cloned_job:
-    name: airflow_cloned_job
-    description: ''
-    fabricUID: 36
-    scheduler:
-      Composer: {}
-    cloudProvider: null
-    jobSize: null
-    scheduleCron: None
-    timeout: null
-    alerting:
-      emails: ''
-      onStart: false
-      onSuccess: false
-      onFailure: false
-    pipelines: []
-    jobClusterMode:
-      clusterMode:
-        Multi: {}
-      clusterId: null
-    enabled: false
-    createdAt: '2024-06-27 00:43:35'
-    author: vaibhav+1@prophecy.io
-    models: []
-    cloned: null
   jobs/databricks_cloned_job:
     name: databricks_cloned_job
     description: ''
