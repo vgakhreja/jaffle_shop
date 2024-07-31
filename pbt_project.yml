@@ -9,32 +9,6 @@ pipelines: {}
 datasets: {}
 templates: {}
 jobs:
-  jobs/new_job:
-    name: new_job
-    description: ''
-    fabricUID: 36
-    scheduler:
-      Prophecy: {}
-    cloudProvider: null
-    jobSize: null
-    scheduleCron: None
-    timeout: null
-    alerting:
-      emails: ''
-      onStart: false
-      onSuccess: false
-      onFailure: false
-    pipelines:
-    - pipelines/test
-    jobClusterMode:
-      clusterMode:
-        Multi: {}
-      clusterId: null
-    enabled: true
-    createdAt: '2024-05-26 14:55:10'
-    author: vaibhav+1@prophecy.io
-    models: []
-    cloned: null
   jobs/databricks_job:
     name: databricks_job
     description: ''
@@ -43,7 +17,7 @@ jobs:
       Databricks: {}
     cloudProvider: null
     jobSize: prophecy_internal_jobs
-    scheduleCron: None
+    scheduleCron: null
     timeout: null
     alerting:
       emails: ''
@@ -59,32 +33,7 @@ jobs:
     createdAt: '2024-06-19 12:20:20'
     author: vaibhav+1@prophecy.io
     models: []
-    cloned: null
-  jobs/databricks_cloned_job:
-    name: databricks_cloned_job
-    description: ''
-    fabricUID: 28
-    scheduler:
-      Databricks: {}
-    cloudProvider: null
-    jobSize: prophecy_internal_jobs
-    scheduleCron: None
-    timeout: null
-    alerting:
-      emails: ''
-      onStart: false
-      onSuccess: false
-      onFailure: false
-    pipelines: []
-    jobClusterMode:
-      clusterMode:
-        Single: {}
-      clusterId: null
-    enabled: true
-    createdAt: '2024-06-27 01:45:07'
-    author: vaibhav+1@prophecy.io
-    models: []
-    cloned: null
+    sqlProjects: []
   jobs/airflow_clone:
     name: airflow_clone
     description: ''
@@ -109,7 +58,1379 @@ jobs:
     createdAt: '2024-06-27 10:33:25'
     author: vaibhav+1@prophecy.io
     models: []
-    cloned: null
+    sqlProjects: []
+  jobs/airflow_clone_again:
+    name: airflow_clone_again
+    description: ''
+    fabricUID: 30
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0/1 * * * *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Multi: {}
+      clusterId: null
+    enabled: true
+    createdAt: '2024-06-27 14:13:01'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/airflow_clone_again_again:
+    name: airflow_clone_again_again
+    description: ''
+    fabricUID: 36
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: null
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-06-27 17:05:45'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/airflow_clone_again_again_uybuyb:
+    name: airflow_clone_again_again_uybuyb
+    description: ''
+    fabricUID: 36
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: null
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-06-27 17:32:27'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/airflow_clone_testing:
+    name: airflow_clone_testing
+    description: ''
+    fabricUID: 36
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: null
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-06-27 18:04:10'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/airflow_clone_testing_1:
+    name: airflow_clone_testing_1
+    description: ''
+    fabricUID: 36
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: null
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-06-27 18:27:55'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/abc:
+    name: abc
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-14 18:30:35'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/b34b:
+    name: b34b
+    description: i4iubn
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-14 19:00:26'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/kajari_2:
+    name: kajari_2
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: ''
+    scheduleCron: ''
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-16 06:04:37'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects:
+    - '62'
+  jobs/vaibhav_1:
+    name: vaibhav_1
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: ''
+    scheduleCron: ''
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-16 13:19:39'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/test_1:
+    name: test_1
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: ''
+    scheduleCron: ''
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-16 15:39:20'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/abcdefr:
+    name: abcdefr
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: ''
+    scheduleCron: ''
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-16 17:50:51'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/abcd:
+    name: abcd
+    description: 3v3ubv3uv
+    fabricUID: 29
+    scheduler:
+      Prophecy: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-16 21:16:15'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/new_db_job:
+    name: new_db_job
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: prophecy_internal_jobs
+    scheduleCron: 0 0/1 * * * ? *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: false
+    createdAt: '2024-07-16 22:21:19'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/abcabc:
+    name: abcabc
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: prophecy_internal_jobs
+    scheduleCron: ''
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: false
+    createdAt: '2024-07-16 22:23:40'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/new_pr_job:
+    name: new_pr_job
+    description: abc
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-16 22:26:35'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/new_db_test_job:
+    name: new_db_test_job
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-18 09:55:55'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/new_db_job_test_1:
+    name: new_db_job_test_1
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-18 10:07:30'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/db_job_1:
+    name: db_job_1
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-18 10:54:05'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/baac:
+    name: baac
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-18 11:03:33'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/newdbtestjob3:
+    name: newdbtestjob3
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-18 11:14:26'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/abcdqwerty:
+    name: abcdqwerty
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-18 12:52:55'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/qwertyasdf:
+    name: qwertyasdf
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-18 13:40:34'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/new_dup_job_db:
+    name: new_dup_job_db
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-18 14:08:55'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/qwertyuiop:
+    name: qwertyuiop
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-18 14:27:22'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/asdfgh:
+    name: asdfgh
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-18 16:17:40'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/abcdefgh:
+    name: abcdefgh
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-18 16:50:18'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/poiuy:
+    name: poiuy
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-18 18:37:48'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/abcdef:
+    name: abcdef
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-19 08:32:56'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/qwertyuiop_1:
+    name: qwertyuiop_1
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-19 08:37:01'
+    author: vaibhav+1@prophecy.io
+    models:
+    - customers
+    sqlProjects: []
+  jobs/jobListMeAja:
+    name: jobListMeAja
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-19 09:22:59'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/abcdef_vaibhav:
+    name: abcdef_vaibhav
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-19 09:49:37'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/ajaBhaiPlease:
+    name: ajaBhaiPlease
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: prophecy_internal_jobs
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: false
+    createdAt: '2024-07-19 10:16:48'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/cftvgy:
+    name: cftvgy
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: prophecy_internal_jobs
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: false
+    createdAt: '2024-07-19 10:59:37'
+    author: vaibhav+1@prophecy.io
+    models:
+    - customers
+    sqlProjects: []
+  jobs/poiuytrewq:
+    name: poiuytrewq
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: prophecy_internal_jobs
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: false
+    createdAt: '2024-07-19 12:27:27'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/rbviuyerbviybe4ivb4btvi4tybvi:
+    name: rbviuyerbviybe4ivb4btvi4tybvi
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-19 12:44:44'
+    author: vaibhav+1@prophecy.io
+    models:
+    - CustomerOrders
+    sqlProjects: []
+  jobs/123:
+    name: '123'
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-19 13:07:05'
+    author: vaibhav+1@prophecy.io
+    models:
+    - stg_payments
+    sqlProjects: []
+  jobs/1234:
+    name: '1234'
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-19 13:28:53'
+    author: vaibhav+1@prophecy.io
+    models:
+    - customers
+    sqlProjects: []
+  jobs/1234trey:
+    name: 1234trey
+    description: should come
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: prophecy_internal_jobs
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: false
+    createdAt: '2024-07-19 14:25:29'
+    author: vaibhav+1@prophecy.io
+    models:
+    - abc
+    sqlProjects: []
+  jobs/qwsed:
+    name: qwsed
+    description: abcd
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-22 08:58:36'
+    author: vaibhav+1@prophecy.io
+    models:
+    - orders
+    sqlProjects: []
+  jobs/airflow_sch_job:
+    name: airflow_sch_job
+    description: ''
+    fabricUID: 29
+    scheduler:
+      Prophecy: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Multi: {}
+      clusterId: null
+    enabled: false
+    createdAt: '2024-07-22 09:03:57'
+    author: vaibhav+1@prophecy.io
+    models:
+    - orders
+    sqlProjects: []
+  jobs/kajari_customer_order1:
+    name: kajari_customer_order1
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0 0/1 * * * ? *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-22 10:45:21'
+    author: vaibhav+1@prophecy.io
+    models:
+    - CustomerOrders
+    sqlProjects: []
+  jobs/kajari_3:
+    name: kajari_3
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: prophecy_internal_jobs
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: false
+    createdAt: '2024-07-22 10:54:10'
+    author: vaibhav+1@prophecy.io
+    models:
+    - CustomerOrders
+    sqlProjects: []
+  jobs/new_test_db_job_1:
+    name: new_test_db_job_1
+    description: ''
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-23 04:11:44'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/db_job_with_orders:
+    name: db_job_with_orders
+    description: qwerty
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0 0/1 * * * ? *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-23 10:53:26'
+    author: vaibhav+1@prophecy.io
+    models:
+    - orders
+    sqlProjects: []
+  jobs/airflow_job_with_models:
+    name: airflow_job_with_models
+    description: ''
+    fabricUID: 30
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0/1 * * * *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Multi: {}
+      clusterId: null
+    enabled: false
+    createdAt: '2024-07-23 10:54:23'
+    author: vaibhav+1@prophecy.io
+    models:
+    - orders
+    sqlProjects: []
+  jobs/qwerty_vaibhav:
+    name: qwerty_vaibhav
+    description: i3biubiubiub
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0 0/1 * * * ? *
+    timeout: null
+    alerting:
+      emails: vaibhav@prophecy.io
+      onStart: true
+      onSuccess: false
+      onFailure: true
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-23 11:25:58'
+    author: vaibhav+1@prophecy.io
+    models:
+    - customers
+    sqlProjects: []
+  jobs/this_should_work:
+    name: this_should_work
+    description: u3bv9ubub
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0 0/1 * * * ? *
+    timeout: null
+    alerting:
+      emails: abc@gmail.com
+      onStart: true
+      onSuccess: false
+      onFailure: true
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-23 11:27:16'
+    author: vaibhav+1@prophecy.io
+    models:
+    - orders
+    sqlProjects: []
+  jobs/qwerty_1234567:
+    name: qwerty_1234567
+    description: ''
+    fabricUID: 30
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0/1 * * * *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-23 11:31:17'
+    author: vaibhav+1@prophecy.io
+    models:
+    - ''
+    sqlProjects: []
+  jobs/should_lead_to_another_didOpen_msg:
+    name: should_lead_to_another_didOpen_msg
+    description: u4biubiu4
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0 0/1 * * * ? *
+    timeout: null
+    alerting:
+      emails: abc@gmail.com
+      onStart: true
+      onSuccess: false
+      onFailure: true
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-23 11:38:14'
+    author: vaibhav+1@prophecy.io
+    models:
+    - ''
+    sqlProjects: []
+  jobs/2vr3vrvbrb:
+    name: 2vr3vrvbrb
+    description: 3b3rb3rwb
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0 0/1 * * * ? *
+    timeout: null
+    alerting:
+      emails: abc@gmail.com
+      onStart: true
+      onSuccess: false
+      onFailure: true
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-23 12:07:46'
+    author: vaibhav+1@prophecy.io
+    models:
+    - ''
+    sqlProjects: []
+  jobs/should_lead_to_another_didOpen_msg1:
+    name: should_lead_to_another_didOpen_msg1
+    description: oeoqubgoubqoub
+    fabricUID: 28
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: prophecy_internal_jobs
+    scheduleCron: 0 0/1 * * * ? *
+    timeout: null
+    alerting:
+      emails: abc@gmail.com
+      onStart: true
+      onSuccess: false
+      onFailure: true
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: false
+    createdAt: '2024-07-23 12:45:08'
+    author: vaibhav+1@prophecy.io
+    models:
+    - CustomerOrders
+    sqlProjects: []
+  jobs/bhunjimko:
+    name: bhunjimko
+    description: ''
+    fabricUID: 29
+    scheduler:
+      Prophecy: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0/1 * * * *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Multi: {}
+      clusterId: null
+    enabled: false
+    createdAt: '2024-07-24 13:57:01'
+    author: vaibhav+1@prophecy.io
+    models:
+    - stg_payments
+    sqlProjects: []
+  jobs/jnimkolpp:
+    name: jnimkolpp
+    description: ''
+    fabricUID: 29
+    scheduler:
+      Prophecy: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0/1 * * * *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-24 14:20:51'
+    author: vaibhav+1@prophecy.io
+    models:
+    - orders
+    sqlProjects: []
+  jobs/v9unv94utn9buvn:
+    name: v9unv94utn9buvn
+    description: ''
+    fabricUID: 29
+    scheduler:
+      Prophecy: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0/1 * * * *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-24 14:22:21'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects:
+    - '62'
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
@@ -157,21 +1478,7 @@ sqlModels:
     createdAt: '2023-04-12 15:35:01'
   .prophecy/metadata/sqlmodels/CustomerOrders:
     name: CustomerOrders
-    schema:
-      providerType: Databricks
-      fields:
-      - name: customer_id
-        dataType:
-          type: Integer
-      - name: first_name
-        dataType:
-          type: String
-      - name: last_name
-        dataType:
-          type: String
-      - name: revenue
-        dataType:
-          type: Double
+    schema: null
     description: null
     author: nathan@prophecy.io
     files:
@@ -330,19 +1637,46 @@ sqlModels:
 sqlSnapshots:
   .prophecy/metadata/sqlsnapshots/abc:
     name: abc
-    schema: null
+    schema:
+      providerType: Databricks
+      fields:
+      - name: id
+        dataType:
+          type: Integer
+      - name: first_name
+        dataType:
+          type: String
+      - name: last_name
+        dataType:
+          type: String
     description: null
     author: vaibhav+1@prophecy.io
     files:
     - snapshots/abc.sql
     - .prophecy/ide/snapshots/abc.json
+    - snapshots/schema.yml
     sqlDependencies:
       models: []
       datasets: []
       seeds: []
       sources: []
       snapshots: []
-    createdAt: '2024-06-19 15:10:13'
+    createdAt: '2024-07-31 14:38:50'
+  .prophecy/metadata/sqlsnapshots/test:
+    name: test
+    schema: null
+    description: null
+    author: vaibhav+1@prophecy.io
+    files:
+    - snapshots/test.sql
+    - .prophecy/ide/snapshots/test.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-07-01 10:22:07'
 sqlTests: {}
 sqlMacros: {}
 sqlSeeds:

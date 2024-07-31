@@ -1,0 +1,204 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "28",
+    "jobId" : "jobs/this_should_work",
+    "name" : "this_should_work",
+    "schedule" : "0 0/1 * * * ? *",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "prophecy_internal_jobs",
+    "alerting" : {
+      "emails" : "abc@gmail.com",
+      "onStart" : true,
+      "onSuccess" : false,
+      "onFailure" : true
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "type" : "Inherited",
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      }
+    },
+    "availableFabrics" : [ {
+      "id" : "28",
+      "name" : "db_fab_1",
+      "clusterSizes" : {
+        "default" : "prophecy_internal_jobs",
+        "availableClusterSizes" : [ "prophecy_internal_jobs" ]
+      }
+    } ]
+  },
+  "processes" : {
+    "BssfrCdBCO1UzZ8ccI4rL" : {
+      "id" : "BssfrCdBCO1UzZ8ccI4rL",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_0",
+        "slug" : "Model_0",
+        "x" : 100,
+        "y" : 100
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "in",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "out",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "entityId" : "stg_payments",
+        "execSeed" : true,
+        "execRun" : true,
+        "gitEntity" : "branch",
+        "model" : "orders",
+        "customVersion" : true,
+        "projectId" : "62",
+        "runOnlyModel" : "true",
+        "loadingModels" : false,
+        "profile" : "run_profile",
+        "sqlFabricId" : "28",
+        "gitEntityValue" : "main",
+        "execDeps" : true,
+        "gitEntityValueBranch" : "main",
+        "execTest" : false,
+        "currentProjectModels" : [ {
+          "label" : "CustomerOrders",
+          "value" : "CustomerOrders",
+          "id" : "62/.prophecy/metadata/sqlmodels/CustomerOrders",
+          "name" : "CustomerOrders"
+        }, {
+          "label" : "stg_customers",
+          "value" : "stg_customers",
+          "id" : "62/.prophecy/metadata/sqlmodels/stg_customers",
+          "name" : "stg_customers"
+        }, {
+          "label" : "stg_payments",
+          "value" : "stg_payments",
+          "id" : "62/.prophecy/metadata/sqlmodels/stg_payments",
+          "name" : "stg_payments"
+        }, {
+          "label" : "customers",
+          "value" : "customers",
+          "id" : "62/.prophecy/metadata/sqlmodels/customers",
+          "name" : "customers"
+        }, {
+          "label" : "orders",
+          "value" : "orders",
+          "id" : "62/.prophecy/metadata/sqlmodels/orders",
+          "name" : "orders"
+        }, {
+          "label" : "stg_orders",
+          "value" : "stg_orders",
+          "id" : "62/.prophecy/metadata/sqlmodels/stg_orders",
+          "name" : "stg_orders"
+        } ]
+      }
+    },
+    "u8GkqIyD-qp5QBd1cUDFT$$ZhUUtRLQNqh9Qc7HCN5Gy" : {
+      "id" : "u8GkqIyD-qp5QBd1cUDFT$$ZhUUtRLQNqh9Qc7HCN5Gy",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_1",
+        "slug" : "Model_1",
+        "x" : -522.7999877929688,
+        "y" : -144
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "UmqwLU2RZ8iETXuuDPyqb$$wbmyeiH2AJExHRuLJ9_wU",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "OkxyMMVKTGW6GC3PDiP7N$$FTLxu3D4J0m4uLzdb9VNW",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "execSeed" : true,
+        "execRun" : true,
+        "gitEntity" : "branch",
+        "projectId" : "62",
+        "runOnlyModel" : "false",
+        "loadingModels" : false,
+        "profile" : "run_profile",
+        "gitEntityValue" : "",
+        "execDeps" : true,
+        "execTest" : false,
+        "currentProjectModels" : [ ]
+      }
+    },
+    "eOWeQ3ve-tWLDpAUq27ds$$eUpdUzNoKnBCv5IAbGnE-" : {
+      "id" : "eOWeQ3ve-tWLDpAUq27ds$$eUpdUzNoKnBCv5IAbGnE-",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_2",
+        "slug" : "Model_2",
+        "x" : -382.79998779296875,
+        "y" : -144
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "3BPq17MIqbIQlSRlvLNuH$$OHaZG8Yf4Au0g1IQBm78N",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "suOVzLlOIbGaetX44M9SD$$C9P-xMgEEc0Jj3WCiDsG9",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "execSeed" : true,
+        "execRun" : true,
+        "gitEntity" : "branch",
+        "projectId" : "62",
+        "runOnlyModel" : "false",
+        "loadingModels" : false,
+        "profile" : "run_profile",
+        "gitEntityValue" : "",
+        "execDeps" : true,
+        "execTest" : false,
+        "currentProjectModels" : [ ]
+      }
+    }
+  },
+  "connections" : [ ]
+}

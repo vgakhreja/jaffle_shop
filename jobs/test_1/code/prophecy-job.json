@@ -1,0 +1,85 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "28",
+    "jobId" : "jobs/test_1",
+    "name" : "test_1",
+    "schedule" : "",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "type" : "Inherited",
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      }
+    },
+    "availableFabrics" : [ {
+      "id" : "28",
+      "name" : "db_fab_1",
+      "clusterSizes" : {
+        "default" : "prophecy_internal_jobs",
+        "availableClusterSizes" : [ "prophecy_internal_jobs" ]
+      }
+    } ]
+  },
+  "processes" : {
+    "GLXjRtyt5NHGy8w0TaxQB" : {
+      "id" : "GLXjRtyt5NHGy8w0TaxQB",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_0",
+        "slug" : "Model_0",
+        "x" : 100,
+        "y" : 100
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "in",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "out",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "execSeed" : true,
+        "execRun" : true,
+        "gitEntity" : "branch",
+        "model" : "stg_payments",
+        "projectId" : "62",
+        "runOnlyModel" : "true",
+        "loadingModels" : false,
+        "profile" : "run_profile",
+        "gitEntityValue" : "vaibhav",
+        "execDeps" : true,
+        "execTest" : false
+      }
+    }
+  },
+  "connections" : [ ]
+}

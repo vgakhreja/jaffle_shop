@@ -1,0 +1,173 @@
+{
+  "metainfo" : {
+    "type" : "Composer",
+    "fabricId" : "30",
+    "jobId" : "jobs/qwerty_1234567",
+    "name" : "qwerty_1234567",
+    "dagName" : "vaibhavgk3s_vaibhav_1_jafjaf_qwerty_1234567",
+    "schedule" : "0/1 * * * *",
+    "enabled" : false,
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "ignore_first_depends_on_past" : true,
+      "do_xcom_push" : true
+    },
+    "availableFabrics" : [ {
+      "id" : "29",
+      "name" : "airflow_fab",
+      "trialStartDate" : 1716551619909
+    }, {
+      "id" : "30",
+      "name" : "airflow_composer"
+    }, {
+      "id" : "36",
+      "name" : "airflow_253"
+    } ],
+    "maxActiveRuns" : 1,
+    "catchup" : false,
+    "scheduleTimeZone" : "UTC",
+    "dagParams" : {
+      "instances" : {
+        "default" : { }
+      },
+      "params" : { },
+      "selected" : "default"
+    },
+    "airflowFunctions" : [ ],
+    "dynamicPipelineStatus" : {
+      "databricks" : false,
+      "dataproc" : false,
+      "emr" : false,
+      "onprem" : false
+    }
+  },
+  "processes" : {
+    "7Je-F4yahHfED8bWDcOLq$$KD6T2ksVo4Hux23fzPlP0" : {
+      "id" : "7Je-F4yahHfED8bWDcOLq$$KD6T2ksVo4Hux23fzPlP0",
+      "component" : "Python",
+      "metadata" : {
+        "label" : "Python_0",
+        "slug" : "Python_0",
+        "x" : -660,
+        "y" : -280
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "KjPmgQEcpbs0y73rPSida$$dnbDIog6aDoKRUOFqPTkn",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "FTVHld9hGjNtHcHVygskh$$NgDReVXwnkziW134IgySS",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "templatesExts" : null,
+        "code" : "def m():\n    return \"abc\"",
+        "valueInLogs" : true,
+        "opArgs" : null,
+        "templatesDict" : null,
+        "taskId" : null,
+        "opKwargs" : null
+      },
+      "connections" : [ ],
+      "processes" : { }
+    },
+    "u-n2-lhgeTCGIZrFVFlGp$$6Xy7hrVJUqWBYn7bKlXiR" : {
+      "id" : "u-n2-lhgeTCGIZrFVFlGp$$6Xy7hrVJUqWBYn7bKlXiR",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_1",
+        "slug" : "Model_1",
+        "x" : -1320,
+        "y" : -520
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "vKrqscVTmbX1WGzPBXALF$$Xzb6oF0s1nIaGICmKzk9d",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "5IDPwZLdx3s3zpKMgMhTj$$hCj4o7E3fW6w8S4uPSDIm",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "entityId" : null,
+        "cacheSelectedOnly" : null,
+        "gitSubPath" : null,
+        "runModelWithParents" : false,
+        "defer" : null,
+        "noDefer" : null,
+        "runSeed" : true,
+        "gitEntity" : "branch",
+        "noPartialParse" : null,
+        "model" : null,
+        "warnErrorOptions" : null,
+        "gitTokenSecret" : null,
+        "state" : null,
+        "useExperimentalParser" : null,
+        "currentProjectSnapshots" : null,
+        "gitSshUrl" : null,
+        "indirectSelection" : null,
+        "partialParse" : null,
+        "runRun" : null,
+        "vars" : null,
+        "isAdhocRunFromSameProject" : null,
+        "noPrint" : null,
+        "quiet" : null,
+        "projectId" : "62",
+        "runMode" : "project",
+        "runOnlyModel" : false,
+        "favorState" : null,
+        "failFast" : null,
+        "noStaticParser" : null,
+        "loadingModels" : false,
+        "runTest" : true,
+        "select" : null,
+        "recordTimingInfo" : null,
+        "fullRefresh" : null,
+        "entityName" : null,
+        "noCacheSelectedOnly" : null,
+        "noFavorState" : null,
+        "snapshot" : null,
+        "isProphecyManaged" : false,
+        "profile" : null,
+        "noVersionCheck" : null,
+        "noWriteJson" : null,
+        "printerWidth" : null,
+        "sqlFabricId" : "28",
+        "gitEntityValue" : null,
+        "logFormat" : null,
+        "runModelWithChildren" : false,
+        "dbtProfileSecret" : null,
+        "target" : null,
+        "exclude" : null,
+        "runDeps" : null,
+        "loadingSnapshots" : false,
+        "noAnonymousUsageStats" : null,
+        "selector" : null,
+        "targetPath" : null,
+        "threads" : null,
+        "warnError" : null,
+        "currentProjectModels" : null,
+        "profilesDir" : null,
+        "taskId" : null,
+        "logPath" : null,
+        "storeFailures" : null,
+        "entityKind" : null
+      },
+      "connections" : [ ],
+      "processes" : { }
+    }
+  },
+  "connections" : [ ]
+}

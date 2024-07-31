@@ -49,34 +49,38 @@
     }
   },
   "processes" : {
-    "-t3Lyx4kYftQyi08dKwLq$$I1YUDoVqanooxvj9JNIHf" : {
-      "id" : "-t3Lyx4kYftQyi08dKwLq$$I1YUDoVqanooxvj9JNIHf",
-      "component" : "Python",
+    "9rmZiq4JOk7Ephu3eMryT$$FHddkALD4NRfnqeNWpxw5" : {
+      "id" : "9rmZiq4JOk7Ephu3eMryT$$FHddkALD4NRfnqeNWpxw5",
+      "component" : "TableauExtract",
       "metadata" : {
-        "label" : "Python_0",
-        "slug" : "Python_0",
-        "x" : -1800,
-        "y" : -880
+        "label" : "TableauExtract_1",
+        "slug" : "TableauExtract_1",
+        "x" : -2380,
+        "y" : -980
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "Prw3oR9qtjA7jCq8F5F_3$$5nyxYRekwHJ4-2auqlpuc",
+          "id" : "IKTOUIA3ByshwLFRz0cv-$$C77Iu0BdPMqZ9W_X2Gg_e",
           "slug" : ""
         } ],
         "outputs" : [ {
-          "id" : "vKmFTQyuOpz0xeUWMgk95$$DnbiYkCtiw_mAUciPwVx1",
+          "id" : "7P0Ty4Piwsn-E9GsmES3V$$o4aXb03vpGQ5Uh2wGwsuD",
           "slug" : ""
         } ]
       },
       "settings" : { },
       "properties" : {
-        "templatesExts" : null,
-        "code" : "def m():\n    return \"ab3vvvc\"",
-        "valueInLogs" : true,
-        "opArgs" : null,
-        "templatesDict" : null,
-        "taskId" : null,
-        "opKwargs" : null
+        "table_name" : "customers",
+        "tableau_project_name" : "Samples",
+        "catalog_name" : null,
+        "databricks_conn_id" : null,
+        "source_type" : "SNOWFLAKE",
+        "use_catalog" : false,
+        "database_name" : null,
+        "tableau_conn_id" : "tableau_ashish",
+        "warehouse_conn_id" : "snowflake_CICD_253",
+        "tableau_extract_name" : "customers",
+        "taskId" : null
       },
       "connections" : [ ],
       "processes" : { }

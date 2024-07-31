@@ -1,0 +1,115 @@
+{
+  "metainfo" : {
+    "type" : "Composer",
+    "fabricId" : "30",
+    "jobId" : "jobs/airflow_job_with_models",
+    "name" : "airflow_job_with_models",
+    "dagName" : "vaibhavgk3s_vaibhav_1_jafjaf_airflow_job_with_models",
+    "schedule" : "0/1 * * * *",
+    "enabled" : false,
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "ignore_first_depends_on_past" : true,
+      "do_xcom_push" : true
+    },
+    "maxActiveRuns" : 1,
+    "catchup" : false,
+    "scheduleTimeZone" : "UTC",
+    "dagParams" : {
+      "instances" : {
+        "default" : { }
+      },
+      "params" : { },
+      "selected" : "default"
+    },
+    "airflowFunctions" : [ ],
+    "dynamicPipelineStatus" : {
+      "databricks" : false,
+      "dataproc" : false,
+      "emr" : false,
+      "onprem" : false
+    }
+  },
+  "processes" : {
+    "ZIXjenc1ZomM5XYYlox22" : {
+      "id" : "ZIXjenc1ZomM5XYYlox22",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_0",
+        "slug" : "Model_0",
+        "x" : 100,
+        "y" : 100
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "in",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "out",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "entityId" : "62/.prophecy/metadata/sqlmodels/orders",
+        "runModelWithParents" : false,
+        "runSeed" : true,
+        "gitEntity" : "model",
+        "projectId" : "62",
+        "runMode" : "vaibhav",
+        "loadingModels" : false,
+        "runTest" : true,
+        "entityName" : "orders",
+        "gitEntityValue" : "branch",
+        "runModelWithChildren" : false,
+        "gitEntityValueBranch" : "branch",
+        "currentProjectModels" : [ {
+          "label" : "CustomerOrders",
+          "value" : "CustomerOrders",
+          "id" : "62/.prophecy/metadata/sqlmodels/CustomerOrders",
+          "name" : "CustomerOrders"
+        }, {
+          "label" : "stg_customers",
+          "value" : "stg_customers",
+          "id" : "62/.prophecy/metadata/sqlmodels/stg_customers",
+          "name" : "stg_customers"
+        }, {
+          "label" : "stg_payments",
+          "value" : "stg_payments",
+          "id" : "62/.prophecy/metadata/sqlmodels/stg_payments",
+          "name" : "stg_payments"
+        }, {
+          "label" : "customers",
+          "value" : "customers",
+          "id" : "62/.prophecy/metadata/sqlmodels/customers",
+          "name" : "customers"
+        }, {
+          "label" : "orders",
+          "value" : "orders",
+          "id" : "62/.prophecy/metadata/sqlmodels/orders",
+          "name" : "orders"
+        }, {
+          "label" : "stg_orders",
+          "value" : "stg_orders",
+          "id" : "62/.prophecy/metadata/sqlmodels/stg_orders",
+          "name" : "stg_orders"
+        }, {
+          "label" : "test",
+          "value" : "test",
+          "id" : "62/.prophecy/metadata/sqlsnapshots/test",
+          "name" : "test"
+        } ]
+      },
+      "connections" : [ ],
+      "processes" : { }
+    }
+  },
+  "connections" : [ ]
+}

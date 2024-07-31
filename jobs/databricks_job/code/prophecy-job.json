@@ -69,6 +69,80 @@
       "properties" : {
         "code" : "def m():\n    return \"abcibi3v\""
       }
+    },
+    "APzvFX3cpa_GSiMnHkGCe$$yvAWSuEvS408g5S0m4w-b" : {
+      "id" : "APzvFX3cpa_GSiMnHkGCe$$yvAWSuEvS408g5S0m4w-b",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_1",
+        "slug" : "Model_1",
+        "x" : -1820,
+        "y" : -980
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "mBeunjxLFa_Qbx_bozoMC$$Egh6Gmacd9cu5zbN_mP8n",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "ezCCeNtB0BE4jBwIG7blK$$P94vAGGqarK61khBFHnt1",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "execSeed" : true,
+        "execRun" : true,
+        "gitEntity" : "branch",
+        "model" : "stg_customers",
+        "projectId" : "62",
+        "runOnlyModel" : "false",
+        "loadingModels" : false,
+        "profile" : "run_profile",
+        "sqlFabricId" : "28",
+        "gitEntityValue" : "vaibhav",
+        "execDeps" : true,
+        "execTest" : false,
+        "currentProjectModels" : [ {
+          "label" : "CustomerOrders",
+          "value" : "CustomerOrders",
+          "id" : "62/.prophecy/metadata/sqlmodels/CustomerOrders",
+          "name" : "CustomerOrders"
+        }, {
+          "label" : "stg_customers",
+          "value" : "stg_customers",
+          "id" : "62/.prophecy/metadata/sqlmodels/stg_customers",
+          "name" : "stg_customers"
+        }, {
+          "label" : "stg_payments",
+          "value" : "stg_payments",
+          "id" : "62/.prophecy/metadata/sqlmodels/stg_payments",
+          "name" : "stg_payments"
+        }, {
+          "label" : "customers",
+          "value" : "customers",
+          "id" : "62/.prophecy/metadata/sqlmodels/customers",
+          "name" : "customers"
+        }, {
+          "label" : "orders",
+          "value" : "orders",
+          "id" : "62/.prophecy/metadata/sqlmodels/orders",
+          "name" : "orders"
+        }, {
+          "label" : "stg_orders",
+          "value" : "stg_orders",
+          "id" : "62/.prophecy/metadata/sqlmodels/stg_orders",
+          "name" : "stg_orders"
+        } ]
+      }
     }
   },
   "connections" : [ ]

@@ -1,0 +1,77 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "28",
+    "jobId" : "jobs/kajari_2",
+    "name" : "kajari_2",
+    "schedule" : "",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "type" : "Inherited",
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      }
+    }
+  },
+  "processes" : {
+    "SzrTRnTOZz5H0Ke2K38YE$$2h8anyZrTg4VKS24oo2mB" : {
+      "id" : "SzrTRnTOZz5H0Ke2K38YE$$2h8anyZrTg4VKS24oo2mB",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_0",
+        "slug" : "Model_0",
+        "x" : -400,
+        "y" : -280
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "SkBGf4kHwEtsqdXYCM7lM$$TMVBt6ZJUHkkuOFZyO_Av",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "Xd70G8mfK1unnWbsOU18h$$w-oox8n6z1iWn4IgWX0fU",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "execSeed" : true,
+        "execRun" : true,
+        "gitEntity" : "branch",
+        "projectId" : "62",
+        "runOnlyModel" : "false",
+        "loadingModels" : false,
+        "profile" : "run_profile",
+        "gitEntityValue" : "",
+        "execDeps" : true,
+        "execTest" : false,
+        "currentProjectModels" : [ ]
+      }
+    }
+  },
+  "connections" : [ ]
+}

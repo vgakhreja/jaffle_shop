@@ -9,36 +9,129 @@
     },
     "graphConfig" : {
       "entityConfig" : {
-        "strategy" : "'timestamp'",
-        "target_schema" : "",
-        "unique_key" : "",
+        "strategy" : "'check'",
+        "check_cols" : [ "'first_name'" ],
+        "target_schema" : "'dev'",
+        "unique_key" : "'id'",
         "type" : "SnapshotConfig"
-      }
+      },
+      "mergeApproach" : "scd2"
     },
     "version" : 3
   },
   "processes" : {
-    "abc##sSWSOGPk" : {
-      "id" : "abc##sSWSOGPk",
-      "component" : "TargetSnapshot",
+    "abc##YU5hJE7J" : {
+      "id" : "abc##YU5hJE7J",
+      "component" : "TargetModel",
       "metadata" : {
         "label" : "abc",
-        "x" : 20,
-        "y" : 20,
-        "phase" : 0
+        "x" : 140,
+        "y" : -40,
+        "phase" : 0,
+        "macroDependencies" : [ ]
       },
       "properties" : {
-        "query" : "",
+        "customQueryDisabled" : true,
         "customQuery" : false,
-        "customQueryDisabled" : true
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM raw_customers\n",
+        "isModel" : false,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "UqpU7w2W",
-          "slug" : "in0"
+          "id" : "NZUks0k1",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "first_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "raw_customers"
         } ],
         "outputs" : [ {
-          "id" : "ChAQfRhz",
+          "id" : "s4GA4UoU",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "first_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "hhJgeJTip2fhADOOE6Mj_" : {
+      "id" : "hhJgeJTip2fhADOOE6Mj_",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "raw_customers",
+        "slug" : "raw_customers",
+        "x" : -200,
+        "y" : -20,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "raw_customers",
+          "sourceType" : "Seed",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "sZ4BiyMTKA5QPF5u5ex1L",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "first_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -46,6 +139,12 @@
       }
     }
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "iwNH2QibHyHOuFN_JZwTH$$VAov35Ytg-RbOP2NDvoTw",
+    "source" : "hhJgeJTip2fhADOOE6Mj_",
+    "sourcePort" : "sZ4BiyMTKA5QPF5u5ex1L",
+    "target" : "abc##YU5hJE7J",
+    "targetPort" : "NZUks0k1"
+  } ],
   "component" : "Snapshot"
 }

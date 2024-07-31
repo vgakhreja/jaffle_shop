@@ -1,0 +1,125 @@
+{
+  "metainfo" : {
+    "type" : "Prophecy",
+    "fabricId" : "29",
+    "jobId" : "jobs/bhunjimko",
+    "name" : "bhunjimko",
+    "dagName" : "2_7HkSnaZRrV2ATvasBqgw_",
+    "schedule" : "0/1 * * * *",
+    "enabled" : false,
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "ignore_first_depends_on_past" : true,
+      "pool" : "si_HVqd_",
+      "do_xcom_push" : true
+    },
+    "availableFabrics" : [ {
+      "id" : "29",
+      "name" : "airflow_fab",
+      "trialStartDate" : 1716551619909
+    }, {
+      "id" : "30",
+      "name" : "airflow_composer"
+    }, {
+      "id" : "36",
+      "name" : "airflow_253"
+    } ],
+    "maxActiveRuns" : 1,
+    "endDate" : "2024-06-14",
+    "catchup" : false,
+    "scheduleTimeZone" : "UTC",
+    "dagParams" : {
+      "instances" : {
+        "default" : { }
+      },
+      "params" : { },
+      "selected" : "default"
+    },
+    "airflowFunctions" : [ ],
+    "dynamicPipelineStatus" : {
+      "databricks" : false,
+      "dataproc" : false,
+      "emr" : false,
+      "onprem" : false
+    }
+  },
+  "processes" : {
+    "WBXw1sSxRwA6Du3x4j5Eo" : {
+      "id" : "WBXw1sSxRwA6Du3x4j5Eo",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_0",
+        "slug" : "Model_0",
+        "x" : 100,
+        "y" : 100
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "in",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "out",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "entityId" : "62/.prophecy/metadata/sqlmodels/stg_payments",
+        "runModelWithParents" : false,
+        "runSeed" : true,
+        "gitEntity" : "branch",
+        "customVersion" : true,
+        "projectId" : "62",
+        "runMode" : "model",
+        "loadingModels" : false,
+        "runTest" : true,
+        "entityName" : "stg_payments",
+        "sqlFabricId" : "28",
+        "gitEntityValue" : "dev",
+        "runModelWithChildren" : false,
+        "gitEntityValueBranch" : "dev",
+        "currentProjectModels" : [ {
+          "label" : "CustomerOrders",
+          "value" : "CustomerOrders",
+          "id" : "62/.prophecy/metadata/sqlmodels/CustomerOrders",
+          "name" : "CustomerOrders"
+        }, {
+          "label" : "stg_customers",
+          "value" : "stg_customers",
+          "id" : "62/.prophecy/metadata/sqlmodels/stg_customers",
+          "name" : "stg_customers"
+        }, {
+          "label" : "stg_payments",
+          "value" : "stg_payments",
+          "id" : "62/.prophecy/metadata/sqlmodels/stg_payments",
+          "name" : "stg_payments"
+        }, {
+          "label" : "customers",
+          "value" : "customers",
+          "id" : "62/.prophecy/metadata/sqlmodels/customers",
+          "name" : "customers"
+        }, {
+          "label" : "orders",
+          "value" : "orders",
+          "id" : "62/.prophecy/metadata/sqlmodels/orders",
+          "name" : "orders"
+        }, {
+          "label" : "stg_orders",
+          "value" : "stg_orders",
+          "id" : "62/.prophecy/metadata/sqlmodels/stg_orders",
+          "name" : "stg_orders"
+        } ]
+      },
+      "connections" : [ ],
+      "processes" : { }
+    }
+  },
+  "connections" : [ ]
+}

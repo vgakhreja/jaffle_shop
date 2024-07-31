@@ -1,0 +1,14 @@
+---
+version: 2
+snapshots:
+- name: "abc"
+  columns:
+  - name: "id"
+    dataType:
+      type: "Integer"
+  - name: "first_name"
+    dataType:
+      type: "String"
+  - name: "last_name"
+    dataType:
+      type: "String"
