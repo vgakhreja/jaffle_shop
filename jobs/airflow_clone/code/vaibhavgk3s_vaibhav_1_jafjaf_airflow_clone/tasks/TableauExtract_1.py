@@ -3,6 +3,7 @@ from vaibhavgk3s_vaibhav_1_jafjaf_airflow_clone.utils.tableau_extract import *
 
 def TableauExtract_1():
     from airflow.operators.python import PythonOperator
+    from datetime import timedelta
 
     return PythonOperator(
         task_id = "TableauExtract_1",
@@ -16,6 +17,8 @@ def TableauExtract_1():
           "warehouse_conn_id": "snowflake_CICD_253",
           "table_name": "customers",
           "database_name": None,
-          "catalog_name": None
+          "catalog_name": None,
+          "profile_dir": None,
+          "dbt_profile": None
         },
     )

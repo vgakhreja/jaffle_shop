@@ -27,15 +27,7 @@
         "onSuccess" : false,
         "onFailure" : false
       }
-    },
-    "availableFabrics" : [ {
-      "id" : "28",
-      "name" : "db_fab_1",
-      "clusterSizes" : {
-        "default" : "prophecy_internal_jobs",
-        "availableClusterSizes" : [ "prophecy_internal_jobs" ]
-      }
-    } ]
+    }
   },
   "processes" : {
     "BssfrCdBCO1UzZ8ccI4rL" : {
@@ -121,8 +113,8 @@
       "metadata" : {
         "label" : "Model_1",
         "slug" : "Model_1",
-        "x" : -522.7999877929688,
-        "y" : -144
+        "x" : -520,
+        "y" : -140
       },
       "ports" : {
         "inputs" : [ {
@@ -163,8 +155,8 @@
       "metadata" : {
         "label" : "Model_2",
         "slug" : "Model_2",
-        "x" : -382.79998779296875,
-        "y" : -144
+        "x" : -380,
+        "y" : -140
       },
       "ports" : {
         "inputs" : [ {
@@ -196,6 +188,48 @@
         "gitEntityValue" : "",
         "execDeps" : true,
         "execTest" : false,
+        "currentProjectModels" : [ ]
+      }
+    },
+    "UYfgbUIe6lAFEk1qktWRI$$2kLXzwzGjQXjBitw_p_hZ" : {
+      "id" : "UYfgbUIe6lAFEk1qktWRI$$2kLXzwzGjQXjBitw_p_hZ",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_3",
+        "slug" : "Model_3",
+        "x" : -580,
+        "y" : -260
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "KIdluxrwb0PYPelfSUH8T$$eUoo4XyzoOb1136moOp-Q",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "L87AYVz4TkTl8Wgsd3Jhq$$GJSeR3z6Xew_3R3QQO1Sj",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "execSeed" : true,
+        "execRun" : false,
+        "gitEntity" : "branch",
+        "projectId" : "62",
+        "runOnlyModel" : "false",
+        "loadingModels" : false,
+        "profile" : "run_profile",
+        "gitEntityValue" : "",
+        "execDeps" : false,
+        "execTest" : true,
         "currentProjectModels" : [ ]
       }
     }

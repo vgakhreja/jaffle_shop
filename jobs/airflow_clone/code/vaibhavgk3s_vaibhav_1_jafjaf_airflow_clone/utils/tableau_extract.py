@@ -14,15 +14,23 @@ def get_info(_source_type, warehouse_conn_id, table_name, database_name, catalog
 
     return hook, table
 
-def get_databricks_sql_conn(_hook):
-    _conn = _hook.get_conn()
+def get_databricks_sql_conn(profile_dir, dbt_profile):
     from databricks import sql
+    import yaml
 
-    return sql.connect(
-        server_hostname = _conn.host,
-        http_path = _conn.extra_dejson.get('http_path'),
-        access_token = _conn.extra_dejson.get('token')
-    )
+    def read_yaml_content():
+        file_path = f"{profile_dir}/profiles.yml"
+
+        with open(file_path, 'r') as file:
+            data = yaml.safe_load(file)
+            target = data[dbt_profile]['target']
+            db_creds = data[dbt_profile]['outputs'][target]
+
+            return (db_creds['host'], db_creds['http_path'], db_creds['token'])
+
+    db_creds = read_yaml_content()
+
+    return sql.connect(server_hostname = db_creds[0], http_path = db_creds[1], access_token = db_creds[2])
 
 def export_tableau_hyperfile(
         source_type,
@@ -33,7 +41,9 @@ def export_tableau_hyperfile(
         warehouse_conn_id,
         table_name,
         database_name,
-        catalog_name
+        catalog_name,
+        profile_dir,
+        dbt_profile
 ):
     from airflow.hooks.base import BaseHook
     import pandas as pd
@@ -43,7 +53,7 @@ def export_tableau_hyperfile(
     sql_query = f"SELECT * FROM {table}"
     # Fetch data from Snowflake into a pandas DataFrame
     # tableau
-    connection = hook.get_conn() if source_type == "SNOWFLAKE" else get_databricks_sql_conn(hook)
+    connection = hook.get_conn() if source_type == "SNOWFLAKE" else get_databricks_sql_conn(profile_dir, dbt_profile)
     cursor = connection.cursor()
 
     try:

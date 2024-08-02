@@ -1,0 +1,112 @@
+{
+  "metainfo" : {
+    "type" : "Composer",
+    "fabricId" : "36",
+    "jobId" : "jobs/simple_airflow_job",
+    "name" : "simple_airflow_job",
+    "dagName" : "vaibhavgk3s_vaibhav_1_jafjaf_simple_airflow_job",
+    "schedule" : "0/1 * * * *",
+    "enabled" : true,
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "ignore_first_depends_on_past" : true,
+      "do_xcom_push" : true
+    },
+    "maxActiveRuns" : 1,
+    "catchup" : false,
+    "scheduleTimeZone" : "UTC",
+    "dagParams" : {
+      "instances" : {
+        "default" : { }
+      },
+      "params" : { },
+      "selected" : "default"
+    },
+    "airflowFunctions" : [ ],
+    "dynamicPipelineStatus" : {
+      "databricks" : false,
+      "dataproc" : false,
+      "emr" : false,
+      "onprem" : false
+    }
+  },
+  "processes" : {
+    "vbxKVWK8T_SaabB5SCaRY$$G4Kv0-48YnkETn_5kjgZw" : {
+      "id" : "vbxKVWK8T_SaabB5SCaRY$$G4Kv0-48YnkETn_5kjgZw",
+      "component" : "Python",
+      "metadata" : {
+        "label" : "Python_0",
+        "slug" : "Python_0",
+        "x" : -300,
+        "y" : -220
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "LhrGprmiPBVNrBABVEN1q$$uMmG7LVnUm1KLbkCmm_iz",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "LTm7ZRhC6SVua0AKH_95l$$ezVvCYESf1i8hFZUFtS_a",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "templatesExts" : null,
+        "code" : "def m():\n    return \"abc\"",
+        "valueInLogs" : true,
+        "opArgs" : null,
+        "templatesDict" : null,
+        "taskId" : null,
+        "opKwargs" : null
+      },
+      "connections" : [ ],
+      "processes" : { }
+    },
+    "jxCNrzo6qqDQBggFMo7Pn$$LtpO6KftfF9qR1jPWDVYt" : {
+      "id" : "jxCNrzo6qqDQBggFMo7Pn$$LtpO6KftfF9qR1jPWDVYt",
+      "component" : "Python",
+      "metadata" : {
+        "label" : "Python_1",
+        "slug" : "Python_1",
+        "x" : -160,
+        "y" : -220
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "kz8uUE1Y6_Y05-g1qlgbd$$qteqSz9_uzcPluehLOm66",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "Gw08e-8nMuTVU76lGUUSo$$uwQtEY8cPebDkmacBkiIY",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "templatesExts" : null,
+        "code" : "def m():\n    return \"abc\"",
+        "valueInLogs" : true,
+        "opArgs" : null,
+        "templatesDict" : null,
+        "taskId" : null,
+        "opKwargs" : null
+      },
+      "connections" : [ ],
+      "processes" : { }
+    }
+  },
+  "connections" : [ {
+    "id" : "Ef9XS3rhytAooDxAmTQY6",
+    "source" : "vbxKVWK8T_SaabB5SCaRY$$G4Kv0-48YnkETn_5kjgZw",
+    "target" : "jxCNrzo6qqDQBggFMo7Pn$$LtpO6KftfF9qR1jPWDVYt",
+    "sourcePort" : "LTm7ZRhC6SVua0AKH_95l$$ezVvCYESf1i8hFZUFtS_a",
+    "targetPort" : "kz8uUE1Y6_Y05-g1qlgbd$$qteqSz9_uzcPluehLOm66"
+  } ]
+}

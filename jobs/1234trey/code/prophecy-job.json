@@ -27,7 +27,15 @@
         "onSuccess" : false,
         "onFailure" : false
       }
-    }
+    },
+    "availableFabrics" : [ {
+      "id" : "28",
+      "name" : "db_fab_1",
+      "clusterSizes" : {
+        "default" : "prophecy_internal_jobs",
+        "availableClusterSizes" : [ "prophecy_internal_jobs" ]
+      }
+    } ]
   },
   "processes" : {
     "5kkiSj_v8OMTImTeFBBqQ$$IFN-hXXmTqTMNNlY1Ewic" : {
@@ -72,6 +80,185 @@
         "gitEntityValue" : "main",
         "execDeps" : true,
         "gitEntityValueBranch" : "main",
+        "execTest" : false,
+        "currentProjectModels" : [ {
+          "label" : "CustomerOrders",
+          "value" : "CustomerOrders",
+          "id" : "62/.prophecy/metadata/sqlmodels/CustomerOrders",
+          "name" : "CustomerOrders"
+        }, {
+          "label" : "stg_customers",
+          "value" : "stg_customers",
+          "id" : "62/.prophecy/metadata/sqlmodels/stg_customers",
+          "name" : "stg_customers"
+        }, {
+          "label" : "stg_payments",
+          "value" : "stg_payments",
+          "id" : "62/.prophecy/metadata/sqlmodels/stg_payments",
+          "name" : "stg_payments"
+        }, {
+          "label" : "customers",
+          "value" : "customers",
+          "id" : "62/.prophecy/metadata/sqlmodels/customers",
+          "name" : "customers"
+        }, {
+          "label" : "orders",
+          "value" : "orders",
+          "id" : "62/.prophecy/metadata/sqlmodels/orders",
+          "name" : "orders"
+        }, {
+          "label" : "stg_orders",
+          "value" : "stg_orders",
+          "id" : "62/.prophecy/metadata/sqlmodels/stg_orders",
+          "name" : "stg_orders"
+        }, {
+          "label" : "abc",
+          "value" : "abc",
+          "id" : "62/.prophecy/metadata/sqlsnapshots/abc",
+          "name" : "abc"
+        }, {
+          "label" : "test",
+          "value" : "test",
+          "id" : "62/.prophecy/metadata/sqlsnapshots/test",
+          "name" : "test"
+        } ]
+      }
+    },
+    "QF34VK5S40vRKMG7iT_U1$$_RJYu62wWAb5jCtj_PPxs" : {
+      "id" : "QF34VK5S40vRKMG7iT_U1$$_RJYu62wWAb5jCtj_PPxs",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_1",
+        "slug" : "Model_1",
+        "x" : -2860,
+        "y" : -1500
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "2IbLQHLe3IS08vyOURZjr$$aciGzcuMNm53yd-ZFGpvF",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "PCOD3BDf3Ydy6KwW35aJq$$j-YbDR3xgn-RCsIqRcRzY",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "entityId" : null,
+        "execSeed" : true,
+        "execRun" : true,
+        "gitEntity" : "branch",
+        "model" : "abc",
+        "customVersion" : true,
+        "projectId" : "62",
+        "runOnlyModel" : "true",
+        "loadingModels" : false,
+        "entityName" : null,
+        "gitEntityValueTag" : null,
+        "profile" : "run_profile",
+        "sqlFabricId" : "28",
+        "gitEntityValue" : "main",
+        "execDeps" : true,
+        "gitEntityValueCommit" : null,
+        "gitEntityValueBranch" : "main",
+        "execTest" : false,
+        "currentProjectModels" : [ {
+          "label" : "CustomerOrders",
+          "value" : "CustomerOrders",
+          "id" : "62/.prophecy/metadata/sqlmodels/CustomerOrders",
+          "name" : "CustomerOrders"
+        }, {
+          "label" : "stg_customers",
+          "value" : "stg_customers",
+          "id" : "62/.prophecy/metadata/sqlmodels/stg_customers",
+          "name" : "stg_customers"
+        }, {
+          "label" : "stg_payments",
+          "value" : "stg_payments",
+          "id" : "62/.prophecy/metadata/sqlmodels/stg_payments",
+          "name" : "stg_payments"
+        }, {
+          "label" : "customers",
+          "value" : "customers",
+          "id" : "62/.prophecy/metadata/sqlmodels/customers",
+          "name" : "customers"
+        }, {
+          "label" : "orders",
+          "value" : "orders",
+          "id" : "62/.prophecy/metadata/sqlmodels/orders",
+          "name" : "orders"
+        }, {
+          "label" : "stg_orders",
+          "value" : "stg_orders",
+          "id" : "62/.prophecy/metadata/sqlmodels/stg_orders",
+          "name" : "stg_orders"
+        }, {
+          "label" : "abc",
+          "value" : "abc",
+          "id" : "62/.prophecy/metadata/sqlsnapshots/abc",
+          "name" : "abc"
+        }, {
+          "label" : "test",
+          "value" : "test",
+          "id" : "62/.prophecy/metadata/sqlsnapshots/test",
+          "name" : "test"
+        } ]
+      }
+    },
+    "L7CkPvaFmmMdbkde5mlru$$H8SJA4S_JDTV5cvOHM6e_" : {
+      "id" : "L7CkPvaFmmMdbkde5mlru$$H8SJA4S_JDTV5cvOHM6e_",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_2",
+        "slug" : "Model_2",
+        "x" : -3140,
+        "y" : -1660
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "PkMYt15Ynlic6dmDdcmxA$$Q5L6TitZNrUBFfxSqryWV",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "tiGD9pKQVa5pEZLPRlf1A$$duEtTkiiS-AJBDhJXWDDQ",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "entityId" : null,
+        "execSeed" : true,
+        "execRun" : true,
+        "gitEntity" : "branch",
+        "customVersion" : true,
+        "projectId" : "62",
+        "runOnlyModel" : "true",
+        "loadingModels" : false,
+        "entityName" : null,
+        "gitEntityValueTag" : null,
+        "profile" : "run_profile",
+        "sqlFabricId" : "28",
+        "gitEntityValue" : "dev",
+        "execDeps" : true,
+        "gitEntityValueCommit" : null,
+        "gitEntityValueBranch" : "dev",
         "execTest" : false,
         "currentProjectModels" : [ {
           "label" : "CustomerOrders",

@@ -18,17 +18,6 @@
       "ignore_first_depends_on_past" : true,
       "do_xcom_push" : true
     },
-    "availableFabrics" : [ {
-      "id" : "29",
-      "name" : "airflow_fab",
-      "trialStartDate" : 1716551619909
-    }, {
-      "id" : "30",
-      "name" : "airflow_composer"
-    }, {
-      "id" : "36",
-      "name" : "airflow_253"
-    } ],
     "maxActiveRuns" : 1,
     "catchup" : false,
     "scheduleTimeZone" : "UTC",

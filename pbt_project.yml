@@ -37,12 +37,12 @@ jobs:
   jobs/airflow_clone:
     name: airflow_clone
     description: ''
-    fabricUID: 36
+    fabricUID: 30
     scheduler:
       Composer: {}
     cloudProvider: null
     jobSize: null
-    scheduleCron: null
+    scheduleCron: None
     timeout: null
     alerting:
       emails: ''
@@ -52,9 +52,9 @@ jobs:
     pipelines: []
     jobClusterMode:
       clusterMode:
-        Single: {}
+        Multi: {}
       clusterId: null
-    enabled: null
+    enabled: true
     createdAt: '2024-06-27 10:33:25'
     author: vaibhav+1@prophecy.io
     models: []
@@ -62,7 +62,7 @@ jobs:
   jobs/airflow_clone_again:
     name: airflow_clone_again
     description: ''
-    fabricUID: 30
+    fabricUID: 38
     scheduler:
       Composer: {}
     cloudProvider: null
@@ -836,31 +836,6 @@ jobs:
     author: vaibhav+1@prophecy.io
     models: []
     sqlProjects: []
-  jobs/ajaBhaiPlease:
-    name: ajaBhaiPlease
-    description: ''
-    fabricUID: 28
-    scheduler:
-      Databricks: {}
-    cloudProvider: null
-    jobSize: prophecy_internal_jobs
-    scheduleCron: None
-    timeout: null
-    alerting:
-      emails: ''
-      onStart: false
-      onSuccess: false
-      onFailure: false
-    pipelines: []
-    jobClusterMode:
-      clusterMode:
-        Single: {}
-      clusterId: null
-    enabled: false
-    createdAt: '2024-07-19 10:16:48'
-    author: vaibhav+1@prophecy.io
-    models: []
-    sqlProjects: []
   jobs/cftvgy:
     name: cftvgy
     description: ''
@@ -1431,6 +1406,31 @@ jobs:
     models: []
     sqlProjects:
     - '62'
+  jobs/simple_airflow_job:
+    name: simple_airflow_job
+    description: ''
+    fabricUID: 36
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0/1 * * * *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Multi: {}
+      clusterId: null
+    enabled: true
+    createdAt: '2024-08-02 11:42:36'
+    author: vaibhav+1@prophecy.io
+    models: []
+    sqlProjects: []
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''

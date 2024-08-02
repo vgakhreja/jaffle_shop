@@ -27,15 +27,7 @@
         "onSuccess" : false,
         "onFailure" : false
       }
-    },
-    "availableFabrics" : [ {
-      "id" : "28",
-      "name" : "db_fab_1",
-      "clusterSizes" : {
-        "default" : "prophecy_internal_jobs",
-        "availableClusterSizes" : [ "prophecy_internal_jobs" ]
-      }
-    } ]
+    }
   },
   "processes" : { },
   "connections" : [ ]

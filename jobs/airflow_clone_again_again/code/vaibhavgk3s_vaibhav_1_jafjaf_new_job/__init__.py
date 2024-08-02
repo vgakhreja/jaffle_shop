@@ -1,2 +1,2 @@
-from .utils import *
 from .tasks import *
+from .utils import *
