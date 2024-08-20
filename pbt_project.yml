@@ -1021,7 +1021,7 @@ jobs:
   jobs/airflow_sch_job:
     name: airflow_sch_job
     description: ''
-    fabricUID: 30
+    fabricUID: 42
     scheduler:
       Prophecy: {}
     cloudProvider: null

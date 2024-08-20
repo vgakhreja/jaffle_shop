@@ -1,10 +1,10 @@
 {
   "metainfo" : {
     "type" : "Prophecy",
-    "fabricId" : "30",
+    "fabricId" : "42",
     "jobId" : "jobs/airflow_sch_job",
     "name" : "airflow_sch_job",
-    "dagName" : "vaibhavgk3s_vaibhav_1_jafjaf_airflow_sch_job",
+    "dagName" : "6CdfYHmv_tfeSKfTZCkXiQ_",
     "schedule" : "None",
     "enabled" : true,
     "alerting" : {
@@ -16,9 +16,11 @@
     "maxConcurrentRuns" : 1,
     "processDefaultSettings" : {
       "ignore_first_depends_on_past" : true,
+      "pool" : "qPXOhMXX",
       "do_xcom_push" : true
     },
     "maxActiveRuns" : 1,
+    "endDate" : "2024-08-22",
     "catchup" : false,
     "scheduleTimeZone" : "UTC",
     "dagParams" : {
