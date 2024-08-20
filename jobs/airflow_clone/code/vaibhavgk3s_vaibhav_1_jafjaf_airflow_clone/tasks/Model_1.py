@@ -28,7 +28,7 @@ def Model_1():
           "git_sub_path": "",
           "select": "",
           "exclude": "",
-          "run_props": " --profile HelloWorld_SQL",
+          "run_props": " --profile run_profile --threads 10",
           "envs": {"DBT_DATABRICKS_INVOCATION_ENV" : "prophecy", "DBT_PROFILES_DIR" : "/"}
         },
     )

@@ -266,21 +266,21 @@ def invoke_dbt_runner(run_mode, entity_kind, entity_name, run_deps,
         LOG.info(f"project_folder: {project_folder} + flag:{(os.path.isdir(project_folder))} zip_path:{zip_path}")
         cmd_list = []
         if not (os.path.isdir(project_folder)):
+            project_folder = temp_folder
             git_cmd = "git clone "
             if git_entity == "branch":
                 git_cmd = git_cmd + "{} --branch {} --single-branch {}".format(
-                    git_ssh_url, git_entity_value, temp_folder
+                    git_ssh_url, git_entity_value, project_folder
                 )
             elif git_entity == "tag":
                 git_cmd = git_cmd + "--depth 1 {} --branch {} {}".format(
-                    git_ssh_url, git_entity_value, temp_folder
+                    git_ssh_url, git_entity_value, project_folder
                 )
             else:
                 git_cmd = git_cmd + "{} {} && git checkout {}".format(
-                    git_ssh_url, temp_folder, git_entity_value
+                    git_ssh_url, project_folder, git_entity_value
                 )
 
-            project_folder = f"{temp_folder}/{git_sub_path}" if git_sub_path is not "" or None else temp_folder
             cmd_list = [git_cmd]
 
         run_command(props=run_props,
