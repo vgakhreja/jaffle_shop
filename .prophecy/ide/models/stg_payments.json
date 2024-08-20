@@ -36,6 +36,7 @@
         "outputs" : [ {
           "id" : "T4gocFOk",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "id",
@@ -101,6 +102,7 @@
         "inputs" : [ {
           "id" : "fFbZ0ZJG",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "id",
@@ -129,6 +131,7 @@
         "outputs" : [ {
           "id" : "dTlrWfHL",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "payment_id",
@@ -182,6 +185,7 @@
         "inputs" : [ {
           "id" : "v2pr2hGK",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "payment_id",
@@ -210,6 +214,7 @@
         "outputs" : [ {
           "id" : "KXfgCuSv",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "payment_id",

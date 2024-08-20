@@ -38,38 +38,132 @@
     }
   },
   "processes" : {
-    "9rmZiq4JOk7Ephu3eMryT$$FHddkALD4NRfnqeNWpxw5" : {
-      "id" : "9rmZiq4JOk7Ephu3eMryT$$FHddkALD4NRfnqeNWpxw5",
-      "component" : "TableauExtract",
+    "0U_gPvsMWizhn6ilay0c2$$3KDqMCjCwRngqsPS_-Ul_" : {
+      "id" : "0U_gPvsMWizhn6ilay0c2$$3KDqMCjCwRngqsPS_-Ul_",
+      "component" : "Model",
       "metadata" : {
-        "label" : "TableauExtract_1",
-        "slug" : "TableauExtract_1",
-        "x" : -2380,
-        "y" : -980
+        "label" : "Model_1",
+        "slug" : "Model_1",
+        "x" : -3200,
+        "y" : -1220
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "IKTOUIA3ByshwLFRz0cv-$$C77Iu0BdPMqZ9W_X2Gg_e",
+          "id" : "V1eKjslhQQQ5mjxfVQqjH$$1oPz1QNLgCrFQFh8UqDhE",
           "slug" : ""
         } ],
         "outputs" : [ {
-          "id" : "7P0Ty4Piwsn-E9GsmES3V$$o4aXb03vpGQ5Uh2wGwsuD",
+          "id" : "DwJDeVtAOv2D2YWM3lefB$$EBOV9vCQpPAVvQqHqRQUW",
           "slug" : ""
         } ]
       },
       "settings" : { },
       "properties" : {
-        "table_name" : "customers",
-        "tableau_project_name" : "Samples",
-        "catalog_name" : null,
-        "databricks_conn_id" : null,
-        "source_type" : "SNOWFLAKE",
-        "use_catalog" : false,
-        "database_name" : null,
-        "tableau_conn_id" : "tableau_ashish",
-        "warehouse_conn_id" : "snowflake_CICD_253",
-        "tableau_extract_name" : "customers",
-        "taskId" : null
+        "entityId" : "62/.prophecy/metadata/sqlmodels/stg_customers",
+        "cacheSelectedOnly" : null,
+        "gitSubPath" : null,
+        "runModelWithParents" : false,
+        "defer" : null,
+        "noDefer" : null,
+        "runSeed" : false,
+        "gitEntity" : "branch",
+        "noPartialParse" : null,
+        "model" : null,
+        "warnErrorOptions" : null,
+        "gitTokenSecret" : null,
+        "state" : null,
+        "useExperimentalParser" : null,
+        "currentProjectSnapshots" : null,
+        "gitSshUrl" : null,
+        "indirectSelection" : null,
+        "partialParse" : null,
+        "runRun" : null,
+        "vars" : null,
+        "isAdhocRunFromSameProject" : null,
+        "customVersion" : true,
+        "noPrint" : null,
+        "quiet" : null,
+        "projectId" : "62",
+        "runMode" : "model",
+        "runOnlyModel" : false,
+        "favorState" : null,
+        "failFast" : null,
+        "noStaticParser" : null,
+        "loadingModels" : false,
+        "runTest" : false,
+        "select" : null,
+        "recordTimingInfo" : null,
+        "fullRefresh" : null,
+        "entityName" : "stg_customers",
+        "noCacheSelectedOnly" : null,
+        "noFavorState" : null,
+        "snapshot" : null,
+        "isProphecyManaged" : false,
+        "profile" : null,
+        "noVersionCheck" : null,
+        "noWriteJson" : null,
+        "printerWidth" : null,
+        "sqlFabricId" : "28",
+        "gitEntityValue" : "dev",
+        "logFormat" : null,
+        "runModelWithChildren" : false,
+        "dbtProfileSecret" : null,
+        "target" : null,
+        "exclude" : null,
+        "runDeps" : true,
+        "loadingSnapshots" : false,
+        "gitEntityValueBranch" : "dev",
+        "noAnonymousUsageStats" : null,
+        "selector" : null,
+        "targetPath" : null,
+        "threads" : "10",
+        "warnError" : null,
+        "currentProjectModels" : [ {
+          "label" : "CustomerOrders",
+          "value" : "CustomerOrders",
+          "id" : "62/.prophecy/metadata/sqlmodels/CustomerOrders",
+          "name" : "CustomerOrders"
+        }, {
+          "label" : "stg_customers",
+          "value" : "stg_customers",
+          "id" : "62/.prophecy/metadata/sqlmodels/stg_customers",
+          "name" : "stg_customers"
+        }, {
+          "label" : "stg_payments",
+          "value" : "stg_payments",
+          "id" : "62/.prophecy/metadata/sqlmodels/stg_payments",
+          "name" : "stg_payments"
+        }, {
+          "label" : "customers",
+          "value" : "customers",
+          "id" : "62/.prophecy/metadata/sqlmodels/customers",
+          "name" : "customers"
+        }, {
+          "label" : "orders",
+          "value" : "orders",
+          "id" : "62/.prophecy/metadata/sqlmodels/orders",
+          "name" : "orders"
+        }, {
+          "label" : "stg_orders",
+          "value" : "stg_orders",
+          "id" : "62/.prophecy/metadata/sqlmodels/stg_orders",
+          "name" : "stg_orders"
+        }, {
+          "label" : "abc",
+          "value" : "abc",
+          "id" : "62/.prophecy/metadata/sqlsnapshots/abc",
+          "name" : "abc"
+        }, {
+          "label" : "test",
+          "value" : "test",
+          "id" : "62/.prophecy/metadata/sqlsnapshots/test",
+          "name" : "test"
+        } ],
+        "profilesDir" : null,
+        "taskId" : null,
+        "logPath" : null,
+        "storeFailures" : null,
+        "entityKind" : "model"
       },
       "connections" : [ ],
       "processes" : { }

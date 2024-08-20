@@ -57,7 +57,8 @@ jobs:
     enabled: true
     createdAt: '2024-06-27 10:33:25'
     author: vaibhav+1@prophecy.io
-    models: []
+    models:
+    - stg_customers
     sqlProjects: []
   jobs/airflow_clone_again:
     name: airflow_clone_again
@@ -1020,7 +1021,7 @@ jobs:
   jobs/airflow_sch_job:
     name: airflow_sch_job
     description: ''
-    fabricUID: 29
+    fabricUID: 30
     scheduler:
       Prophecy: {}
     cloudProvider: null
@@ -1431,6 +1432,33 @@ jobs:
     author: vaibhav+1@prophecy.io
     models: []
     sqlProjects: []
+  jobs/airflow_model:
+    name: airflow_model
+    description: ''
+    fabricUID: 30
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-08-20 07:48:51'
+    author: vaibhav+1@prophecy.io
+    models:
+    - stg_payments
+    sqlProjects:
+    - '62'
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
@@ -1449,6 +1477,7 @@ sqlModels:
   .prophecy/metadata/sqlmodels/stg_orders:
     name: stg_orders
     schema:
+      entityType: ''
       providerType: Databricks
       fields:
       - name: order_id
@@ -1494,6 +1523,7 @@ sqlModels:
   .prophecy/metadata/sqlmodels/orders:
     name: orders
     schema:
+      entityType: ''
       providerType: Databricks
       fields:
       - name: order_id
@@ -1540,6 +1570,7 @@ sqlModels:
   .prophecy/metadata/sqlmodels/customers:
     name: customers
     schema:
+      entityType: ''
       providerType: Databricks
       fields:
       - name: customer_id
@@ -1580,6 +1611,7 @@ sqlModels:
   .prophecy/metadata/sqlmodels/stg_payments:
     name: stg_payments
     schema:
+      entityType: ''
       providerType: Databricks
       fields:
       - name: payment_id
@@ -1610,6 +1642,7 @@ sqlModels:
   .prophecy/metadata/sqlmodels/stg_customers:
     name: stg_customers
     schema:
+      entityType: ''
       providerType: Databricks
       fields:
       - name: customer_id
@@ -1638,6 +1671,7 @@ sqlSnapshots:
   .prophecy/metadata/sqlsnapshots/abc:
     name: abc
     schema:
+      entityType: ''
       providerType: Databricks
       fields:
       - name: id
@@ -1683,6 +1717,7 @@ sqlSeeds:
   .prophecy/metadata/sqlseeds/raw_customers:
     name: raw_customers
     schema:
+      entityType: ''
       providerType: Databricks
       fields:
       - name: id
@@ -1702,6 +1737,7 @@ sqlSeeds:
   .prophecy/metadata/sqlseeds/raw_orders:
     name: raw_orders
     schema:
+      entityType: ''
       providerType: Databricks
       fields:
       - name: id
@@ -1724,6 +1760,7 @@ sqlSeeds:
   .prophecy/metadata/sqlseeds/raw_payments:
     name: raw_payments
     schema:
+      entityType: ''
       providerType: Databricks
       fields:
       - name: id

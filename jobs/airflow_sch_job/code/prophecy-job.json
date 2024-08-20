@@ -1,10 +1,10 @@
 {
   "metainfo" : {
     "type" : "Prophecy",
-    "fabricId" : "29",
+    "fabricId" : "30",
     "jobId" : "jobs/airflow_sch_job",
     "name" : "airflow_sch_job",
-    "dagName" : "7mcxtnCCBpsB8mLv12w13Q_",
+    "dagName" : "vaibhavgk3s_vaibhav_1_jafjaf_airflow_sch_job",
     "schedule" : "None",
     "enabled" : false,
     "alerting" : {
@@ -16,22 +16,9 @@
     "maxConcurrentRuns" : 1,
     "processDefaultSettings" : {
       "ignore_first_depends_on_past" : true,
-      "pool" : "si_HVqd_",
       "do_xcom_push" : true
     },
-    "availableFabrics" : [ {
-      "id" : "29",
-      "name" : "airflow_fab",
-      "trialStartDate" : 1716551619909
-    }, {
-      "id" : "30",
-      "name" : "airflow_composer"
-    }, {
-      "id" : "36",
-      "name" : "airflow_253"
-    } ],
     "maxActiveRuns" : 1,
-    "endDate" : "2024-06-14",
     "catchup" : false,
     "scheduleTimeZone" : "UTC",
     "dagParams" : {

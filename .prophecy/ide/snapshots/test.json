@@ -20,7 +20,7 @@
   "processes" : {
     "test##fckbxHLD" : {
       "id" : "test##fckbxHLD",
-      "component" : "TargetModel",
+      "component" : "TargetSnapshot",
       "metadata" : {
         "label" : "test",
         "phase" : 0
@@ -30,7 +30,6 @@
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
         "query" : "",
-        "isModel" : false,
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"

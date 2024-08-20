@@ -52,6 +52,7 @@
         "inputs" : [ {
           "id" : "XhfycsXI",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "customer_id",
@@ -70,6 +71,7 @@
         "outputs" : [ {
           "id" : "NVjhTu2R",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "customer_id",
@@ -109,6 +111,7 @@
         "outputs" : [ {
           "id" : "uPFQAxpA",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "payment_id",
@@ -174,6 +177,7 @@
         "inputs" : [ {
           "id" : "Lq2irmFY",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "payment_id",
@@ -201,6 +205,7 @@
         }, {
           "id" : "iFPSYIgk",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "order_id",
@@ -229,6 +234,7 @@
         "outputs" : [ {
           "id" : "pjT8SOVe",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "customer_id",
@@ -268,6 +274,7 @@
         "outputs" : [ {
           "id" : "zVw4WpWX",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "order_id",
@@ -317,6 +324,7 @@
         "outputs" : [ {
           "id" : "y0H3uAGo",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "customer_id",
@@ -364,6 +372,7 @@
         "inputs" : [ {
           "id" : "B5zI3AOK",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "customer_id",
@@ -407,6 +416,7 @@
         "outputs" : [ {
           "id" : "VInjTrgF",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "customer_id",
@@ -514,6 +524,7 @@
         "inputs" : [ {
           "id" : "lbsGyP10",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "customer_id",
@@ -536,6 +547,7 @@
         }, {
           "id" : "XvElQQIT",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "customer_id",
@@ -563,6 +575,7 @@
         }, {
           "id" : "SP8h1CF8",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "customer_id",
@@ -581,6 +594,7 @@
         "outputs" : [ {
           "id" : "F7jzBMFE",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "customer_id",
@@ -672,6 +686,7 @@
         "inputs" : [ {
           "id" : "LcsGBr7p",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "order_id",
@@ -700,6 +715,7 @@
         "outputs" : [ {
           "id" : "FA8Xac3J",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "customer_id",
@@ -753,6 +769,7 @@
         "inputs" : [ {
           "id" : "eoraQ9Eh",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "customer_id",
@@ -796,6 +813,7 @@
         "outputs" : [ {
           "id" : "DVzOaFUh",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "customer_id",

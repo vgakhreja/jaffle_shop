@@ -14,15 +14,14 @@
         "target_schema" : "'dev'",
         "unique_key" : "'id'",
         "type" : "SnapshotConfig"
-      },
-      "mergeApproach" : "scd2"
+      }
     },
     "version" : 3
   },
   "processes" : {
     "abc##YU5hJE7J" : {
       "id" : "abc##YU5hJE7J",
-      "component" : "TargetModel",
+      "component" : "TargetSnapshot",
       "metadata" : {
         "label" : "abc",
         "x" : 140,
@@ -35,7 +34,6 @@
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
         "query" : "SELECT * \n\nFROM raw_customers\n",
-        "isModel" : false,
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -45,6 +43,7 @@
         "inputs" : [ {
           "id" : "NZUks0k1",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "id",
@@ -68,6 +67,7 @@
         "outputs" : [ {
           "id" : "s4GA4UoU",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "id",
@@ -114,6 +114,7 @@
         "outputs" : [ {
           "id" : "sZ4BiyMTKA5QPF5u5ex1L",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "id",

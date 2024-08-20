@@ -7,7 +7,7 @@ from airflow import DAG
 from airflow.models.param import Param
 from airflow.decorators import task
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
-from vaibhavgk3s_vaibhav_1_jafjaf_simple_airflow_job.tasks import Python_0, Python_1
+from vaibhavgk3s_vaibhav_1_jafjaf_simple_airflow_job.tasks import Python_0
 PROPHECY_RELEASE_TAG = "__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__"
 
 with DAG(
@@ -19,5 +19,3 @@ with DAG(
     max_active_runs = 1
 ) as dag:
     Python_0_op = Python_0()
-    Python_1_op = Python_1()
-    Python_0_op >> Python_1_op

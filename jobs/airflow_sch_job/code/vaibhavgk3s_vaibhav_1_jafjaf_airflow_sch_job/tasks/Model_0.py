@@ -1,4 +1,4 @@
-from _7mcxtnccbpsb8mlv12w13q_.utils import *
+from vaibhavgk3s_vaibhav_1_jafjaf_airflow_sch_job.utils import *
 
 def Model_0():
     from airflow.operators.python import PythonOperator
@@ -12,7 +12,7 @@ def Model_0():
         python_callable = invoke_dbt_runner,
         op_kwargs = {
           "is_adhoc_run_from_same_project": False,
-          "is_prophecy_managed": True,
+          "is_prophecy_managed": False,
           "run_deps": False,
           "run_seeds": True,
           "run_parents": False,
@@ -28,9 +28,7 @@ def Model_0():
           "git_sub_path": "",
           "select": "",
           "exclude": "",
-          "run_props": " --profile run_profile",
-          "envs": {"DBT_DATABRICKS_INVOCATION_ENV" : "prophecy"}, 
-          "git_token_secret": "0g3Xq1RJ8z_CvBovjskz8g_", 
-          "dbt_profile_secret": "vhsnuaZIeCeHjS3uHtY0i"
+          "run_props": " --profile HelloWorld_SQL",
+          "envs": {"DBT_DATABRICKS_INVOCATION_ENV" : "prophecy", "DBT_PROFILES_DIR" : "/"}
         },
     )
